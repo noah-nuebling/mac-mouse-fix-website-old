@@ -68,6 +68,7 @@ h1 {
 }
 .DownloadButton {
     
+    
     cursor: pointer;
 
     background-color: var(--accent2);
@@ -80,33 +81,15 @@ h1 {
     font-size: 25px;
     font-weight: 500;
     
-    box-shadow: 0 1px 2px  rgba(190,190,190,0.5);
-    
-}
-.DownloadButton:hover {
-    animation-name: grow;
-    animation-duration: 0.3s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: both;
+    transition: all 0.3s ease 0s;
 }
 
-@keyframes lower {
-    from {
-        padding: 32px 75px;
-    }
-    to {
-        padding: 30px 70px;
-    }
+.DownloadButton:hover {
+    box-shadow: 0 0 5px 1px rgba(30,0,0,0.30), 0 15px 30px 0px rgba(60,40,0,0.1);
+    transform: scale(1.02,1.02);
+    /*transform: translate(0px,-1px);*/
 }
-@keyframes elevate {
-    from {
-        padding: 30px 70px;
-    }
-    to {
-        padding: 32px 75px;
-    }
-}
-*/
+
 
 .ButtonDescription {
     margin: 10px;
@@ -169,8 +152,13 @@ h1 {
     
 
     border: 0 solid rgba(0,0,0,0.20);
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.35);
+    
+    transition: all 0.5s ease 0.0s;
+}
+.VideoDemo.Elevate {
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.15), 0 25px 30px 0 rgba(0,0,0,0.35);
-
+    transform: scale(1.05,1.05);
 }
 
 .UIPicture {
@@ -197,6 +185,7 @@ h1 {
 
 
 .Footer {
+    margin-top: 0px;
     margin-left: 50px;
     display: flex;
     align-items: center;
@@ -206,15 +195,17 @@ h1 {
     text-align: left
 }
 .FooterLink {
+    margin-top: 50px;
     font-size: 13px;
     color: var(--light2);
     text-decoration: none;
     margin: 25px;
+    margin-bottom: 15px;
 }
 
 .DonationButton {
     margin-left: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     height: 40px;
     cursor: pointer;
 }
@@ -254,4 +245,5 @@ animation experiments
         padding: 32px 75px;
     }
 }
+    box-shadow: 0 0 10px 1px rgba(60,0,0,0.30), 0 5px 20px rgba(255,165,0,0.50);
 */
