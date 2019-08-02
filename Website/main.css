@@ -1,0 +1,198 @@
+
+:root {
+    --light1:   #BEBEBE; /* lightest grey */
+    --light2:   #9A9A9A; /* mid grey */
+    --light3:   #909090; /* mid grey slightly darker */
+    --accent1:  #3C3C3C; /* almost black */
+    --accent2:  #FFA500;  /* #217DFC;dark blue */
+    
+    --backgroundGray: #F5F5F5;
+}
+
+
+
+html {
+    zoom: 125%;
+    min-width: 560px;
+}
+
+
+
+
+
+/* TITLE */
+
+
+body {
+    text-align: center;
+    font-family: "Helvetica Neue"
+}
+
+h1 {
+    font-kerning: auto;
+    font-size: 70px;
+    font-weight: 900;
+}
+.Title1 {
+    font-size: 30px;
+    color: var(--light1);
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+.Title2_1 {
+    letter-spacing: -2px;
+    color: var(--accent1);
+    margin-top: 0px;
+    margin-bottom: 25px;
+
+}
+.Title2_2 {
+    color: var(--accent2);
+}
+.DownloadDiv {
+    margin-left: 150px;
+    margin-bottom: 40px;
+    
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.DownloadButton {
+    
+    cursor: pointer;
+
+    background-color: var(--accent2);
+    width: 240px;
+    height: 70px;
+    border-radius: 200px;
+    border: none;
+    
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    
+}
+.Description {
+    margin: 10px;
+    
+    color: var(--light2);
+    font-size: 16.5px;
+    font-weight: 400 
+}
+.Subtitle {
+    
+    font-size: 20px;
+    color: var(--light2);
+    font-weight: 400;
+    font-kerning: auto;
+    margin-top: 0px;
+    letter-spacing: 0.0px;
+}
+
+
+
+
+.GraySection {
+    border: 100px;
+    background: var(--backgroundGray);
+}
+
+
+
+
+
+/* BODY */
+
+
+.SHBase {                   /* SH -> Section Header*/
+    margin-top: 50px;
+    font-size: 28px;
+    color: var(--light2);
+    font-weight:400;
+    letter-spacing: -0.25px;
+}
+.SHBlue {
+    color: var(--accent2);
+    font-weight: 500;
+}
+.SHBlack {
+    color: var(--accent1);
+    font-weight: 500;
+}
+
+.VideoDemo {
+    width: 800px;
+}
+
+.UIPicture {
+    width: 800px;
+}
+
+
+
+
+
+
+/* FOOTER */
+
+
+.Footer {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    
+    width: 800px;
+    height: 70px;
+    text-align: left
+}
+.FooterLink {
+    font-size: 13px;
+    color: var(--light2);
+    text-decoration: none;
+    margin: 25px;
+}
+
+.DonationButton {
+    margin-left: 25px;
+    margin-bottom: 15px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+/*
+animation experiments
+
+.DownloadButton {
+    cursor: pointer;
+
+    animation-name: shrink;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+.DownloadButton:hover {
+    animation-name: grow;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+@keyframes shrink {
+    from {
+        padding: 32px 75px;
+    }
+    to {
+        padding: 30px 70px;
+    }
+}
+@keyframes grow {
+    from {
+        padding: 30px 70px;
+    }
+    to {
+        padding: 32px 75px;
+    }
+}
+*/
