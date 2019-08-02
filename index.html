@@ -19,6 +19,7 @@ document colors:
         <title>Mac Mouse Fix - a simple way to make your mouse better</title>
         <meta name="description" content="A simple way to improve your Mouse experience!">
         <link rel="stylesheet" href="main.css">
+        <script src="jquery-3.4.1.js"></script>
     </head>
     
     <body>
@@ -38,11 +39,6 @@ document colors:
         
         
         <h3 class="Subtitle">No trial version or additional costs, just a simple way to make your mouse better.</h3>
-        
-        <script>
-            document.getElementById("downloadButtonShadow").style.opacity="0.5";
-            document.getElementById("downloadButtonShadow").style.left="400px";
-        </script>
         <!-- Body -->
         
         <section class="GraySection">
@@ -66,7 +62,7 @@ document colors:
                 <span class="SHBlack">Unobtrusive </span>and <span class="SHBlue">Light Weight</span>.
             </h2>
             
-            <img class="UIPicture" src="UI.png" alt="UI Picture">
+            <img id="pic1" class="UIPicture" src="UI.png" alt="UI Picture">
             
             <p class="SectionDescription">
                 Plugs right into System Preferences, and stays out of your way.
@@ -88,20 +84,14 @@ document colors:
 </html>
 
 
+<!--elevate videos on play-->
+
+
 <script>
-    var vid1 = document.getElementById("vid1");
-    var vid2 = document.getElementById("vid2");
-    vid1.onplay = function() {
-        vid1.classList.add("Elevate");
-    }
-    vid2.onplay = function() {
-        vid2.classList.add("Elevate");
-    }
-    vid1.onpause = function() {
-        vid1.classList.remove("Elevate");
-    }
-    vid2.onpause = function() {
-        vid2.classList.remove("Elevate");
-    }
+
+
 </script>
+
+
+
         

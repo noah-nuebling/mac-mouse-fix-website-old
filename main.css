@@ -24,7 +24,7 @@ html {
     text-align: right;
     color: var(--light1);
     font-weight: 400;
-    font-size: 16.5;
+    font-size: 16.5px;
 }
 
 
@@ -156,20 +156,29 @@ h1 {
     
     transition: all 0.5s ease 0.0s;
 }
-.VideoDemo.Elevate {
+.VideoDemo:hover {
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.15), 0 25px 30px 0 rgba(0,0,0,0.35);
     transform: scale(1.05,1.05);
 }
 
 .UIPicture {
-    width: 800px;
+    width: 600px;
     margin: auto;
-    margin-bottom: 10px;
+    margin-top: 25px;
+    margin-bottom: 75px;
+
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.35);
+
+    transition: all 0.5s ease 0.0s;
+}
+.UIPicture:hover {
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.15), 0 25px 30px 0 rgba(0,0,0,0.35);
+    transform: scale(1.05,1.05);
 }
 
 .SectionDescription {
     margin: 0px;
-    margin-bottom: 100px;
+    margin-bottom: 75px;
     
     color: var(--light2);
     font-size: 16.5px;
