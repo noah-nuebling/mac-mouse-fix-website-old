@@ -13,11 +13,19 @@
 
 html {
     zoom: 125%;
-    min-width: 560px;
+    /*min-width: 560px;*/
+    min-width: 900px;
+    background-size: cover;
 }
 
 
-
+.Signature {
+    margin: 0px;
+    text-align: right;
+    color: var(--light1);
+    font-weight: 400;
+    font-size: 16.5;
+}
 
 
 /* TITLE */
@@ -73,7 +81,7 @@ h1 {
     font-weight: 500;
     
 }
-.Description {
+.ButtonDescription {
     margin: 10px;
     
     color: var(--light2);
@@ -87,6 +95,7 @@ h1 {
     font-weight: 400;
     font-kerning: auto;
     margin-top: 0px;
+    margin-bottom: 40px;
     letter-spacing: 0.0px;
 }
 
@@ -94,8 +103,9 @@ h1 {
 
 
 .GraySection {
-    border: 100px;
     background: var(--backgroundGray);
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -122,11 +132,33 @@ h1 {
 }
 
 .VideoDemo {
-    width: 800px;
+    overflow: auto;
+    align-content: center;
+    max-width: 800px;
+    height: auto;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    
+
+    border: 0 solid rgba(0,0,0,0.20);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.15), 0 25px 30px 0 rgba(0,0,0,0.35);
+
 }
 
 .UIPicture {
     width: 800px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.SectionDescription {
+    margin: 0px;
+    margin-bottom: 100px;
+    
+    color: var(--light2);
+    font-size: 16.5px;
+    font-weight: 400 
 }
 
 

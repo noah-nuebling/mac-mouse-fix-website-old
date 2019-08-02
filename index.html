@@ -23,38 +23,43 @@ document colors:
     
     <body>
         
+        <p class="Signature">Noah Nuebling</p>
+        
         <!-- Title -->
         
         <h1 class="Title1">Mac</h1>
         <h1 class="Title2_1">Mouse <span class="Title2_2">Fix</span></h1>
         
             <div class="DownloadDiv">
-                <button onclick="location.href='http://google.com'" type="button" class="DownloadButton">Download</button>
-                <p class="Description">for macOS 10.10+</p>
+                <button id="downloadButton" onclick="location.href='http://google.com'" type="button" class="DownloadButton">Download</button>
+                <p class="ButtonDescription">for macOS 10.10+</p>
+                
             </div>
+        
         
         <h3 class="Subtitle">No trial version or additional costs, just a simple way to make your mouse better.</h3>
         
-        
+        <script>
+            document.getElementById("downloadButtonShadow").style.opacity="0.5";
+            document.getElementById("downloadButtonShadow").style.left="400px";
+        </script>
         <!-- Body -->
         
         <section class="GraySection">
             <h2 class="SHBase">
                 <span class="SHBlue">Smooth </span>and <span class="SHBlack">Responsive </span>scrolling.
             </h2>
-            
-            <video class="VideoDemo" controls autoplay>
+            <video class="VideoDemo" controls>
                 <source src="Smooth%20Scroll%20Demo.mp4" type="video/mp4">
             </video>
         </section>
         
         <h2 class="SHBase">
             <span class="SHBlack">Mission Control</span>, <span class="SHBlue"> Universal Forward / Back</span>, and more.
-            
-            <video class="VideoDemo" controls autoplay>
-                <source src="Smooth%20Scroll%20Demo.mp4" type="video/mp4">
-            </video>
         </h2>
+        <video class="VideoDemo" controls>
+            <source src="Smooth%20Scroll%20Demo.mp4" type="video/mp4">
+        </video>
         
         <section class="GraySection">
             <h2 class="SHBase">
@@ -63,7 +68,7 @@ document colors:
             
             <img class="UIPicture" src="UI.png" alt="UI Picture">
             
-            <p class="Description">
+            <p class="SectionDescription">
                 Plugs right into System Preferences, and stays out of your way.
             </p>
         </section>
