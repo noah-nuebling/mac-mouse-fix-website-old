@@ -49,7 +49,7 @@ document colors:
             <h2 class="SHBase">
                 <span class="SHBlue">Smooth </span>and <span class="SHBlack">Responsive </span>scrolling.
             </h2>
-            <video class="VideoDemo" controls>
+            <video id="vid1" class="VideoDemo" controls>
                 <source src="Smooth%20Scroll%20Demo.mp4" type="video/mp4">
             </video>
         </section>
@@ -57,7 +57,7 @@ document colors:
         <h2 class="SHBase">
             <span class="SHBlack">Mission Control</span>, <span class="SHBlue"> Universal Forward / Back</span>, and more.
         </h2>
-        <video class="VideoDemo" controls>
+        <video id="vid2" class="VideoDemo" controls>
             <source src="Smooth%20Scroll%20Demo.mp4" type="video/mp4">
         </video>
         
@@ -86,4 +86,22 @@ document colors:
     </body>
     
 </html>
+
+
+<script>
+    var vid1 = document.getElementById("vid1");
+    var vid2 = document.getElementById("vid2");
+    vid1.onplay = function() {
+        vid1.classList.add("Elevate");
+    }
+    vid2.onplay = function() {
+        vid2.classList.add("Elevate");
+    }
+    vid1.onpause = function() {
+        vid1.classList.remove("Elevate");
+    }
+    vid2.onpause = function() {
+        vid2.classList.remove("Elevate");
+    }
+</script>
         
