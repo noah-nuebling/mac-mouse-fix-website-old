@@ -23,6 +23,8 @@ document colors:
     </head>
     
     <body>
+
+        <div class="TopBar"></div>
         
         <p class="Signature">Noah Nuebling</p>
         
@@ -65,7 +67,7 @@ document colors:
             <img id="pic1" class="UIPicture" src="UI.png" alt="UI Picture">
             
             <p class="SectionDescription">
-                Plugs right into System Preferences, and stays out of your way.
+                Plugs into System Preferences, and stays right out of your way.
             </p>
         </section>
         
@@ -74,8 +76,8 @@ document colors:
         
         <section class="Footer">
             <a href="http://google.com" class="FooterLink">GitHub</a>
-            <a href="http://google.com" class="FooterLink">Questions, Feedback, Feature Requests</a>
-            <img onclick="location.href='http://google.com'" class="DonationButton" src="Donation%20Button.jpg" alt="Donation Button">        
+            <a href="mailto:noah.n.public@gmail.com?subject=Mac Mouse Fix - Contact&" class="FooterLink">Questions, Feedback, Feature Requests</a>
+            <img onclick="location.href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ARSTVR6KFB524&source=url'" class="DonationButton" src="Donation%20Button.jpg" alt="Donation Button">
         
         </section>
         
@@ -89,6 +91,25 @@ document colors:
 
 <script>
 
+    let vid1 = document.getElementById("vid1");
+    vid1.onplay = function() {
+        vid1.classList.add("Elevate");
+    }
+    vid1.onpause = function() {
+        vid1.classList.remove("Elevate");
+    }
+
+    let vid2 = document.getElementById("vid2");
+    vid2.onplay = function() {
+        vid2.classList.add("Elevate");
+    }
+    vid2.onpause = function() {
+            vid2.classList.remove("Elevate");
+    }
+    /*
+    let pic1 = document.getElementById("pic1");
+    var pic1Visible = false;
+    */
 
 </script>
 
