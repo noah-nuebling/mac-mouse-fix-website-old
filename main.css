@@ -4,7 +4,9 @@
     --light2:   #9A9A9A; /* mid grey */
     --light3:   #909090; /* mid grey slightly darker */
     --accent1:  #3C3C3C; /* almost black */
-    --accent2:  #FFA500;  /* #217DFC;dark blue */
+    --accent2:  #217DFC;
+
+    /* green: #28C948, blue: #FFA500, Orange: #217DFC*/
     
     --backgroundGray: #F5F5F5;
 }
@@ -69,7 +71,7 @@ h1 {
     color: var(--accent2);
 }
 .DownloadDiv {
-    margin-left: 150px;
+    margin-left: 140px;
     margin-bottom: 40px;
     
     display: inline-flex;
@@ -181,6 +183,9 @@ h1 {
     box-shadow: 0 2px 3px 0 rgba(0,0,0,0.35);
 
     transition: all 0.5s ease 0.0s;
+
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.15), 0 25px 30px 0 rgba(0,0,0,0.35);
+    transform: scale(1.05,1.05);
 }
 .UIPicture:hover {
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.15), 0 25px 30px 0 rgba(0,0,0,0.35);
@@ -228,8 +233,14 @@ h1 {
     margin-bottom: 5px;
     height: 40px;
     cursor: pointer;
-}
 
+    transition: all 0.5s ease 0.0s;
+}
+/*
+.DonationButton:hover {
+    transform: scale(1.05, 1.05);
+}
+*/
 
 
 /*
