@@ -43,7 +43,7 @@ document colors:
         <h3 class="Subtitle">No trial version or additional costs, just a simple way to make your mouse better.</h3>
         <!-- Body -->
         
-        <section class="GraySection">
+        <section id="graySec1" class="GraySection">
             <h2 class="SHBase">
                 <span class="SHBlue">Smooth </span>and <span class="SHBlack">Responsive </span>scrolling.
             </h2>
@@ -90,6 +90,14 @@ document colors:
 
 
 <script>
+    window.onresize = function() {
+        let gs = document.getElementById("graySec1");
+        console.log("g: " + gs.clientWidth);
+        console.log("w: " + window.innerWidth + "\n");
+        console.log("");
+
+    }
+
 
     let vid1 = document.getElementById("vid1");
     vid1.onplay = function() {
@@ -108,11 +116,6 @@ document colors:
     }
     /*
     let pic1 = document.getElementById("pic1");
-    var pic1Visible = false;
     */
 
 </script>
-
-
-
-        
