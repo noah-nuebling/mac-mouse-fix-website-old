@@ -80,13 +80,19 @@ h1 {
     color: var(--accent2);
 }
 .DownloadDiv {
-    margin-left: calc(var(--titleScale) * 140px);
+    margin-left: calc(var(--titleScale) * 205px);
     margin-bottom: calc(var(--titleScale) * 40px);
     
     display: inline-flex;
     align-items: center;
     flex-direction: row;
     
+}
+
+#mouseFixIcon {
+    width: calc(var(--titleScale) * 40px);
+    margin-right: 0px;
+    margin-left: calc(var(--titleScale) * 18px);
 }
 .DownloadButton {
     
