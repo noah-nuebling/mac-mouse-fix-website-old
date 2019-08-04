@@ -93,6 +93,7 @@ h1 {
     cursor: pointer;
 
     background-color: var(--accent2);
+    border: 0;
     width: calc(var(--titleScale) * 240px);
     height: calc(var(--titleScale) * 70px);
     border-radius: calc(var(--titleScale) * 200px);

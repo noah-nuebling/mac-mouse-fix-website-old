@@ -11,7 +11,7 @@ document colors:
 
 
 <!DOCTYPE html>
-<html>
+<html lang="English">
     
     <head>
         <meta charset="utf-8">
@@ -33,11 +33,10 @@ document colors:
         <h1 class="Title1">Mac</h1>
         <h1 class="Title2_1">Mouse <span class="Title2_2">Fix</span></h1>
         
-            <div class="DownloadDiv">
-                <button id="downloadButton" onclick="location.href='http://google.com'" type="button" class="DownloadButton">Download</button>
-                <p class="ButtonDescription">for macOS 10.10+</p>
-                
-            </div>
+        <div class="DownloadDiv">
+            <button id="downloadButton" onclick="location.href='http://google.com'" type="button" class="DownloadButton">Download</button>
+            <p class="ButtonDescription">for macOS 10.10+</p>
+        </div>
         
         
         <h3 class="Subtitle">No trial version or additional costs, just a simple way to make your mouse better.</h3>
@@ -106,24 +105,24 @@ document colors:
         console.log("w: " + window.innerWidth + "\n");
         console.log("");
 
-    }
+    };
 
 
     let vid1 = document.getElementById("vid1");
     vid1.onplay = function() {
         vid1.classList.add("Elevate");
-    }
+    };
     vid1.onpause = function() {
         vid1.classList.remove("Elevate");
-    }
+    };
 
     let vid2 = document.getElementById("vid2");
     vid2.onplay = function() {
         vid2.classList.add("Elevate");
-    }
+    };
     vid2.onpause = function() {
             vid2.classList.remove("Elevate");
-    }
+    };
     /*
     let pic1 = document.getElementById("pic1");
     */
