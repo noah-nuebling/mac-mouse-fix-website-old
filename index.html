@@ -34,16 +34,7 @@ document colors:
         <h1 class="Title2_1">Mouse <span class="Title2_2">Fix</span></h1>
         
         <div class="DownloadDiv">
-            <button id="downloadButton" onclick="
-                var element = document.createElement('a');
-                element.setAttribute('href', 'MouseFix.prefPane');
-                element.setAttribute('download', 'MouseFix.prefPane');
-
-                element.style.display = 'none';
-                document.body.appendChild(element);
-                element.click();
-                document.body.removeChild(element);
-            "
+            <button id="downloadButton" onclick="window.location.href='Download/Mac Mouse Fix.zip'"
                     type="button" class="DownloadButton">Download</button>
             <img id="mouseFixIcon" src="Mouse_Fix.png" alt="alternative text ?">
             <p class="ButtonDescription">for macOS 10.10+</p>
