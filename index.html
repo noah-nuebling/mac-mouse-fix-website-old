@@ -46,29 +46,22 @@ document colors:
         
         <section id="graySec1" class="GraySection">
             <h2 class="SHBase">
-                <span class="SHBlue">Smooth </span>and <span class="SHBlack">Responsive </span>scrolling.
+                <span class="SHBlack">Mission Control</span>, <span class="SHBlue"> Universal Forward / Back</span>, and more.
             </h2>
-                <video id="vid1"
-                       class="VideoDemo"
-                       controls
-                       preload="auto"
-                       playsinline
-                       poster="vid1Thumb.png">
-                    <source src="vid1.mp4#t=0.1" type="video/mp4">
-                </video>
         </section>
-        
+
         <h2 class="SHBase">
-            <span class="SHBlack">Mission Control</span>, <span class="SHBlue"> Universal Forward / Back</span>, and more.
+            <span class="SHBlue">Smooth </span>and <span class="SHBlack">Responsive </span>scrolling.
         </h2>
-        <video id="vid2"
-               class="VideoDemo"
-               controls
-               preload="auto"
-               playsinline
-               poster="vid1Thumb.png">
-            <source src="vid1.mp4#t=0.1" type="video/mp4">
-        </video>
+        <div class="video-container", id="vid1-container">
+            <video id="vid1"
+                   class="video"
+                   controls
+                   preload="auto"
+                   playsinline>
+                <source src="MF_scr.mp4#t=0.1" type="video/mp4">
+            </video>
+        </div>
         
         <section class="GraySection">
             <h2 class="SHBase">
@@ -111,14 +104,15 @@ document colors:
 
 
     let vid1 = document.getElementById("vid1");
+    let vid1Container = vid1.parentElement;
     vid1.onplay = function() {
-        vid1.classList.add("Elevate");
+        vid1Container.classList.add("Elevate");
     };
     vid1.onpause = function() {
-        vid1.classList.remove("Elevate");
+        vid1Container.classList.remove("Elevate");
     };
 
-    let vid2 = document.getElementById("vid2");
+    let vid2 = document.getElementById("vid2").parentElement;
     vid2.onplay = function() {
         vid2.classList.add("Elevate");
     };

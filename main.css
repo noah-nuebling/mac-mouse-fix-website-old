@@ -168,26 +168,46 @@ h1 {
     font-weight: 500;
 }
 
-.VideoDemo {
-    overflow: auto;
-    align-content: center;
-    /*max-width: 800px;*/
+.video-container {
+
+
+    transform: scale(1,1); /*have to do this so "overflow: hidden" works for some reason*/
+    overflow: hidden;
+
     max-width: 62.5%;
     min-width: 600px;
-    height: auto;
-    margin: auto;
-    margin-top: 25px;
-    margin-bottom: 50px;
-    
+
+    margin: 25px auto 50px auto;
 
     border: 0 solid rgba(0,0,0,0.20);
+    border-radius: 5px;
+
     box-shadow: 0 2px 3px 0 rgba(0,0,0,0.35);
-    
+    /*box-shadow: 0 0 20px 0 rgba(0,0,0,0.15), 0 25px 30px 0 rgba(0,0,0,0.35);*/
+
     transition: all 0.5s ease 0.0s;
+
 }
-.VideoDemo.Elevate {
+
+.video-container.Elevate {
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.15), 0 25px 30px 0 rgba(0,0,0,0.35);
     transform: scale(1.05,1.05);
+}
+
+.video {
+
+
+    /*overflow: auto;*/
+    /*align-content: center;*/
+    /*max-width: 800px;*/
+
+    /*border-style: solid;*/
+
+    width: 100%;
+
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+
 }
 
 .UIPicture {
