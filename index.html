@@ -19,7 +19,7 @@ document colors:
         <title>Mac Mouse Fix - a simple way to make your mouse better</title>
         <meta name="description" content="A simple way to improve your Mouse experience!">
         <link rel="stylesheet" href="main.css">
-        <script src="jquery-3.4.1.js"></script>
+        <script src="lib/jquery-3.4.1.js"></script>
     </head>
     
     <body>
@@ -36,8 +36,8 @@ document colors:
         <div class="DownloadDiv">
             <button id="downloadButton" onclick="window.location.href='maindownload/MacMouseFix.zip'"
                     type="button" class="DownloadButton">Download</button>
-            <img id="mouseFixIcon" src="Mouse_Fix.png" alt="alternative text ?">
-            <p class="ButtonDescription">for macOS 10.10+</p>
+            <img id="mouseFixIcon" src="resources/Mouse_Fix.png" alt="alternative text ?">
+            <p class="ButtonDescription">for macOS 10.11+</p>
         </div>
         
         
@@ -59,20 +59,29 @@ document colors:
                    controls
                    preload="auto"
                    playsinline>
-                <source src="MF_scr.mp4#t=0.1" type="video/mp4">
+                <source src="resources/scroll_demo.mp4#t=0.1" type="video/mp4">
             </video>
+<!--            <iframe controls=0 frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/2uLGifk0LC8?autoplay=1&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"></iframe>-->
         </div>
         
         <section class="GraySection">
-            <h2 class="SHBase">
-                <span class="SHBlack">Unobtrusive </span>and <span class="SHBlue">Light Weight</span>.
-            </h2>
-            
-            <img id="pic1" class="UIPicture" src="UI.png" alt="UI Picture">
-            
-            <p class="SectionDescription">
-                Plugs into System Preferences, and stays right out of your way.
-            </p>
+
+            <div class="sec3-container">
+
+                <div class="sec3-container__left">
+                    <h2 class="SHBase">
+                        <span class="SHBlack">Unobtrusive </span>and <span class="SHBlue">Light Weight</span>.
+                    </h2>
+                    <p class="SectionDescription">
+                        Plugs into System Preferences, and stays right out of your way.
+                    </p>
+                </div>
+
+                <div class="sec3-container__right">
+                    <img id="pic1" class="UIPicture" src="resources/syspref.png" alt="UI Picture">
+                </div>
+
+            </div>
         </section>
         
         
@@ -81,7 +90,7 @@ document colors:
         <section class="Footer">
             <a href="https://github.com/noah-nuebling" class="FooterLink">GitHub</a>
             <a href="mailto:noah.n.public@gmail.com?subject=Mac Mouse Fix - Contact&" class="FooterLink">Questions, Feedback, Feature Requests</a>
-            <img onclick="location.href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ARSTVR6KFB524&source=url'" class="DonationButton" src="Donation%20Button.jpg" alt="Donation Button">
+            <img onclick="location.href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ARSTVR6KFB524&source=url'" class="DonationButton" src="resources/Donation%20Button.jpg" alt="Donation Button">
         
         </section>
         
@@ -90,10 +99,11 @@ document colors:
 </html>
 
 
-<!--elevate videos on play-->
 
 
 <script>
+
+
     window.onresize = function() {
         let gs = document.getElementById("graySec1");
         console.log("g: " + gs.clientWidth);
@@ -102,6 +112,7 @@ document colors:
 
     };
 
+    <!--elevate video on play-->
 
     let vid1 = document.getElementById("vid1");
     let vid1Container = vid1.parentElement;
@@ -112,13 +123,6 @@ document colors:
         vid1Container.classList.remove("Elevate");
     };
 
-    let vid2 = document.getElementById("vid2").parentElement;
-    vid2.onplay = function() {
-        vid2.classList.add("Elevate");
-    };
-    vid2.onpause = function() {
-            vid2.classList.remove("Elevate");
-    };
     /*
     let pic1 = document.getElementById("pic1");
     */
