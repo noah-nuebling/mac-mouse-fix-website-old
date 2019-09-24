@@ -32,36 +32,52 @@ document colors:
         
         <h1 class="Title1">Mac</h1>
         <h1 class="Title2_1">Mouse <span class="Title2_2">Fix</span></h1>
-        
+
         <div class="DownloadDiv">
             <button id="downloadButton" onclick="window.location.href='maindownload/MacMouseFix.zip'"
                     type="button" class="DownloadButton">Download</button>
             <img id="mouseFixIcon" src="resources/Mouse_Fix.png" alt="alternative text ?">
             <p class="ButtonDescription">for macOS 10.11+</p>
         </div>
-        
-        
+
+
         <h3 class="Subtitle">No trial version or additional costs, just a simple way to make your mouse better.</h3>
-        <!-- Body -->
+
+        <!-- content -->
         
         <section id="graySec1" class="GraySection">
             <h2 class="SHBase">
-                <span class="SHBlack">Mission Control</span>, <span class="SHBlue"> Universal Forward / Back</span>, and more.
+                <span class="SHBlack">Mission Control</span>, and <span class="SHBlue"> More</span>...
             </h2>
+            <p class="sec-desc--top">
+                Do most of the things you do on a trackpad. Without a trackpad.
+            </p>
+            <div class="video-container">
+                <video id="vid1"
+                       class="video"
+                       controls
+                       preload="auto"
+                       playsinline>
+                    <source src="resources/remap_demo.mp4#t=0.1" type="video/mp4">
+                </video>
+            </div>
+
         </section>
 
         <h2 class="SHBase">
             <span class="SHBlue">Smooth </span>and <span class="SHBlack">Responsive </span>scrolling.
         </h2>
-        <div class="video-container", id="vid1-container">
-            <video id="vid1"
+        <p class="sec-desc--top">
+            Experience a refined, physics based scrolling algorithm, that strikes the perfect balance between precision and fluidity.
+        </p>
+        <div class="video-container">
+            <video id="vid2"
                    class="video"
                    controls
                    preload="auto"
                    playsinline>
                 <source src="resources/scroll_demo.mp4#t=0.1" type="video/mp4">
             </video>
-<!--            <iframe controls=0 frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/2uLGifk0LC8?autoplay=1&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"></iframe>-->
         </div>
         
         <section class="GraySection">
@@ -72,8 +88,8 @@ document colors:
                     <h2 class="SHBase">
                         <span class="SHBlack">Unobtrusive </span>and <span class="SHBlue">Light Weight</span>.
                     </h2>
-                    <p class="SectionDescription">
-                        Plugs into System Preferences, and stays right out of your way.
+                    <p class="sec-desc--bottom">
+                        Plugs into System Preferences, and stays out of your way.
                     </p>
                 </div>
 
@@ -115,13 +131,23 @@ document colors:
     <!--elevate video on play-->
 
     let vid1 = document.getElementById("vid1");
-    let vid1Container = vid1.parentElement;
+    let vid1Cont = vid1.parentElement;
     vid1.onplay = function() {
-        vid1Container.classList.add("Elevate");
+        vid1Cont.classList.add("elevate");
     };
     vid1.onpause = function() {
-        vid1Container.classList.remove("Elevate");
+        vid1Cont.classList.remove("elevate");
     };
+
+    let vid2 = document.getElementById("vid2");
+    let vid2Cont = vid2.parentElement;
+    vid2.onplay = function() {
+        vid2Cont.classList.add("elevate");
+    };
+    vid2.onpause = function() {
+        vid2Cont.classList.remove("elevate");
+    };
+
 
     /*
     let pic1 = document.getElementById("pic1");

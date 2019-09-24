@@ -73,7 +73,7 @@ h1 {
     letter-spacing: -2px;
     color: var(--accent1);
     margin-top: 0px;
-    margin-bottom: calc(var(--titleScale) * 25px);
+    margin-bottom: calc(var(--titleScale) * 15px);
 
 }
 .Title2_2 {
@@ -81,7 +81,7 @@ h1 {
 }
 .DownloadDiv {
     margin-left: calc(var(--titleScale) * 205px);
-    margin-bottom: calc(var(--titleScale) * 40px);
+    margin-bottom: calc(var(--titleScale) * 30px);
     
     display: inline-flex;
     align-items: center;
@@ -126,12 +126,12 @@ h1 {
 }
 .Subtitle {
     
-    font-size: calc(var(--titleScale) * 20px);
+    font-size: calc(var(--titleScale) * 16.5px);
     color: var(--light2);
     font-weight: 400;
     font-kerning: auto;
     margin-top: 0px;
-    margin-bottom: calc(var(--titleScale) * 40px);
+    margin-bottom: calc(var(--titleScale) * 30px);
     letter-spacing: 0px;
 }
 
@@ -189,7 +189,7 @@ h1 {
 
 }
 
-.video-container.Elevate {
+.video-container.elevate {
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.15), 0 25px 30px 0 rgba(0,0,0,0.35);
     transform: scale(1.05,1.05);
 }
@@ -265,18 +265,25 @@ h1 {
 
 /*}*/
 
-.SectionDescription {
+
+.sec-desc--top {
+    margin: 0 0 0px 0;
+    color: var(--light2);
+    font-size: 16.5px;
+    font-weight: 400
+}
+
+.sec-desc--bottom {
 
     margin: 0px;
     margin-bottom: 50px;
+    margin-bottom: 5%;
     /*margin-bottom: 75px; !* 120px *!*/
     
     color: var(--light2);
     font-size: 16.5px;
     font-weight: 400 
 }
-
-
 
 
 
