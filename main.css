@@ -101,7 +101,7 @@ h1 {
     background-color: var(--accent2);
     border: 0;
     width: calc(var(--titleScale) * 240px);
-    height: calc(var(--titleScale) * 70px);
+    height: calc(var(--titleScale) * 65px);
     border-radius: calc(var(--titleScale) * 200px);
     color: white;
     font-size: calc(var(--titleScale) * 25px);
@@ -126,7 +126,7 @@ h1 {
 }
 .Subtitle {
     
-    font-size: calc(var(--titleScale) * 16.5px);
+    font-size: calc(var(--titleScale) * 15px);
     color: var(--light2);
     font-weight: 400;
     font-kerning: auto;
@@ -153,8 +153,8 @@ h1 {
 
 
 .SHBase {                   /* SH -> Section Header*/
-    margin-top: 50px;
-    font-size: 28px;
+    margin: 50px 0 20px 0;
+    font-size: 30px;
     color: var(--light2);
     font-weight:400;
     letter-spacing: -0.25px;
@@ -166,6 +166,26 @@ h1 {
 .SHBlack {
     color: var(--accent1);
     font-weight: 500;
+}
+
+
+.sec-desc--top {
+    margin: 0 0 0 0;
+    color: var(--light2);
+    font-size: 16.5px;
+    font-weight: 400
+}
+
+.sec-desc--bottom {
+
+    margin: 0px;
+    margin-bottom: 50px;
+    margin-bottom: 5%;
+    /*margin-bottom: 75px; !* 120px *!*/
+
+    color: var(--light2);
+    font-size: 16.5px;
+    font-weight: 400
 }
 
 .video-container {
@@ -250,7 +270,7 @@ h1 {
 
 .UIPicture-cont {
 
-    margin: 20px 0 50px 0;
+    margin: 25px 0 50px 0;
 
     max-width: 40%;
     min-width: 480px;
@@ -283,26 +303,6 @@ h1 {
 /*    transform: scale(1.05,1.05);*/
 
 /*}*/
-
-
-.sec-desc--top {
-    margin: 0 0 0px 0;
-    color: var(--light2);
-    font-size: 16.5px;
-    font-weight: 400
-}
-
-.sec-desc--bottom {
-
-    margin: 0px;
-    margin-bottom: 50px;
-    margin-bottom: 5%;
-    /*margin-bottom: 75px; !* 120px *!*/
-    
-    color: var(--light2);
-    font-size: 16.5px;
-    font-weight: 400 
-}
 
 
 
