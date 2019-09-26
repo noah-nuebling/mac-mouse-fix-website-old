@@ -205,8 +205,8 @@ h1 {
 
     border-radius: 5px;
 
-    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.35);
-    /*box-shadow: 0 0 20px 0 rgba(0,0,0,0.15), 0 25px 30px 0 rgba(0,0,0,0.35);*/
+    /*box-shadow: 0 2px 3px 0 rgba(0,0,0,0.35);*/
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.15), 0 25px 30px 0 rgba(0,0,0,0.35);
 
     transition: all 0.5s ease 0.0s;
 
@@ -214,7 +214,7 @@ h1 {
 
 .video-container.elevate {
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.15), 0 25px 30px 0 rgba(0,0,0,0.35);
-    transform: scale(1.05,1.05);
+    /*transform: scale(1.05,1.05);*/
 }
 
 .video {

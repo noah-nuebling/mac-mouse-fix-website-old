@@ -19,7 +19,21 @@ document colors:
         <title>Mac Mouse Fix - a simple way to make your mouse better</title>
         <meta name="description" content="A simple way to improve your Mouse experience!">
         <link rel="stylesheet" href="main.css">
+
+        <!-- jquery -->
         <script src="lib/jquery-3.4.1.js"></script>
+        <!-- Hotjar Tracking Code for mousefix.org -->
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:1503356,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+
     </head>
     
     <body>
@@ -34,7 +48,36 @@ document colors:
         <h1 class="Title2_1">Mouse <span class="Title2_2">Fix</span></h1>
 
         <div class="DownloadDiv">
-            <button id="downloadButton" onclick="window.location.href='maindownload/MacMouseFix.zip'"
+            <button id="downloadButton" onclick="
+                window.location.href='maindownload/MacMouseFix.zip';
+                // const download_counter = read('maindownload/download_counter');
+
+
+                console.log('lulatsch');
+
+                var reader = new FileReader();
+                reader.onload = function() {
+                    var text = reader.result;
+                    console.log('on the onsidee');
+                    console.log(text);
+                }
+
+                var file = new File
+
+                reader.readAsText(new Blob([]));
+
+
+                // var rawFile = new XMLHttpRequest();
+                // rawFile.open('GET', 'maindownload/download_counter', true);
+                // rawFile.onreadystatechange = function() {
+                //   if (rawFile.readyState === 4) {
+                //       var allText = rawFile.responseText;
+                //       console.log('saure soße');
+                //   }
+                // }
+
+            "
+
                     type="button" class="DownloadButton">Download</button>
             <img id="mouseFixIcon" src="resources/Mouse_Fix.png" alt="alternative text ?">
             <p class="ButtonDescription">for macOS 10.11+</p>
@@ -47,10 +90,10 @@ document colors:
         
         <section id="graySec1" class="GraySection">
             <h2 class="SHBase">
-                <span class="SHBlack">Mission Control</span>, and <span class="SHBlue"> More</span>...
+                <span class="SHBlack">Mission Control</span> and <span class="SHBlue"> More</span>...
             </h2>
             <p class="sec-desc--top">
-                Do the things you do on a trackpad. Without a trackpad.
+                Do the things you do with a trackpad. Without a trackpad.
             </p>
             <div class="video-container">
                 <video id="vid1"
@@ -68,7 +111,7 @@ document colors:
             <span class="SHBlue">Smooth </span>and <span class="SHBlack">Responsive </span>scrolling.
         </h2>
         <p class="sec-desc--top">
-            Experience a refined, physics based scrolling algorithm, which strikes a perfect balance between precision and fluidity.
+            Experience a refined, friction based scrolling algorithm which strikes a perfect balance between precision and fluidity.
         </p>
         <div class="video-container">
             <video id="vid2"
@@ -88,7 +131,7 @@ document colors:
                     <span class="SHBlack">Unobtrusive </span>and <span class="SHBlue">Light Weight</span>.
                 </h2>
                 <p class="sec-desc--top">
-                    You won't notice Mouse Fix, except in System Preferences, and of course in your mouse.
+                    You won't notice Mouse Fix, except in System Preferences, and of course when using your mouse.
                 </p>
                 <div class="UIPicture-cont">
                     <img id="pic1" class="UIPicture" src="resources/syspref.png" alt="UI Picture">
