@@ -1,30 +1,28 @@
+:root {
+  --light1:   #BEBEBE; /* lightest grey */
+  --light2:   #9A9A9A; /* mid grey */
+  --light3:   #909090; /* mid grey slightly darker */
+  --accent1:  #3C3C3C; /* almost black */
+  --accent2:  #217DFC;
+
+  /* green: #28C948, blue: #FFA500, Orange: #217DFC*/
+
+  --backgroundGray: #F5F5F5;
+}
+
 
 html {
 }
-
-/*body {*/
-
-/*  height: calc(100vh - 30px);*/
-
-/*  background-color: #FFA500;*/
-/*}*/
 
 body {
 
   height: calc(100vh - 30px);
 
   min-width: 100%;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 15px 0 0 0;
 
-  text-align: center;
+  text-align: left;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
-}
-
-h1 {
-  font-kerning: auto;
-  font-size: calc(var(--titleScale) * 70px);
-  font-weight: 900;
 }
 
 .content {
@@ -32,21 +30,158 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  /*max-width: 100%;*/
-  /*max-height: 100%;*/
-  /*max-height: 100vh;*/
   position: relative;
 
   height: 100%;
 
 }
 
+a {
+  color: inherit;
+}
+
+.top-bar {
+
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  width: 100%;
+  align-items: center;
+
+  grid-gap: unset;
+
+  margin: 0 0 10px 0;
+}
+
+.nav {
+
+  display: flex;
+
+  align-items: center;
+
+  margin: 0 0 0 20px;
+
+  justify-self: start;
+
+}
+.nav__link {
+
+  color: #9A9A9A;
+  margin-right: 10px;
+  text-decoration-line: none;
+}
+.nav__link--active {
+  color: black;
+  margin-right: 10px;
+  text-decoration-line: none;
+}
+
+.top-bar__title {
+
+
+
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*justify-items: center; - doesn't work for some reason*/
+  width: 240px;
+
+  height: 50px;
+}
+.top-bar__title__logo {
+
+  max-width: 40px;
+  max-height: 40px;
+
+  margin: 0 10px 0 0;
+
+}
+.top-bar__title__txt {
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--light1);
+}
+.top-bar__title__txt--1 {
+  color: var(--accent1);
+}
+.top-bar__title__txt--2 {
+  color: var(--accent2);
+}
+
+.rule {
+  margin: 0 30px 0 30px;
+  width: calc(100% - 40px);
+  border-top: 0.25px solid #ECECEC;
+}
+
+.main-content {
+  max-width: 1500px;
+  width: 100%;
+}
+
+.sec--intro {
+  padding: 20px 5% 20px 5%;
+}
+.sec--questions {
+  padding: 20px 5% 20px 5%;
+  background-color: var(--backgroundGray);
+}
+
+.sec-title {
+
+  font-size: 27px;
+  color: var(--accent1);
+}
+
+.sec-txt {
+  font-size: 16px;
+  color: var(--accent1);
+
+  margin: 0 0 20px 0;
+}
+.sec-txt__header {
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--accent1);
+}
+
+
+
+
+.Footer {
+
+  overflow: auto;
+  white-space: nowrap;
+
+
+  margin: 5px 0 10px 0;
+  padding: 0 0 0 5%;
+  display: flex;
+  align-items: center;
+
+
+  height: 70px;
+  text-align: left
+}
+
 .FooterLink {
-  margin-top: 50px;
   font-size: 13px;
   color: var(--light2);
   text-decoration: none;
-  margin: 25px;
-  margin-bottom: 15px;
+
+
+  margin: 25px 25px 15px 0px;
+
+}
+
+.DonationButton {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 5px;
+  height: 40px;
+  cursor: pointer;
+
+  transition: all 0.5s ease 0.0s;
 }

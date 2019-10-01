@@ -62,6 +62,31 @@ h1 {
     font-size: calc(var(--titleScale) * 70px);
     font-weight: 900;
 }
+.nav {
+
+
+    margin: 31px 0 0px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+
+    justify-self: start;
+
+}
+.nav__link {
+
+    color: #9A9A9A;
+    margin-right: 10px;
+    text-decoration-line: none;
+}
+.nav__link--active {
+    color: black;
+    margin-right: 10px;
+    text-decoration-line: none;
+}
+
 .Title1 {
     font-size: calc(var(--titleScale) * 30px);
 

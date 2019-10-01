@@ -4,16 +4,70 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Mac Mouse Fix - Thank You!</title>
+        <title>Mac Mouse Fix - About</title>
         <meta name="description" content="Mac Mouse Fix - About">
         <link rel="stylesheet" href="about.css">
     </head>
     
     <body>
         <div class="content">
-            <h1>About Mac Mouse Fix</h1>
-            <p>This Website is currently under construction.</p>
-            <a href="https://www.mousefix.org/"git >Go to the Home Page</a>
+
+            <div class="top-bar">
+                <div class="nav">
+                    <a class="nav__link" href="https://www.mousefix.org/">Home</a>
+                    <a class="nav__link--active" href="https://www.mousefix.org/about">About</a>
+                </div>
+
+                <div class="top-bar__title">
+                    <img class="top-bar__title__logo" src="../resources/Mouse_Fix.png" alt="">
+                    <p class="top-bar__title__txt">Mac <span class="top-bar__title__txt--1">Mouse</span> <span class="top-bar__title__txt--2">Fix</span></p>
+                </div>
+            </div>
+
+            <hr class="rule">
+
+            <div class="main-content">
+                <div class="sec--intro">
+                    <h2 class="sec-title">Hi There!</h2>
+                    <p class="sec-txt">
+                        My name is Noah and I made Mac Mouse Fix. When I started out I was completely new to software development but with the power of Google, Stack Overflow, and Apple's Developer Documentation at my fingertips I managed to learn what is necessary to deliver a solid little app that I hope will be useful for you guys.
+                        Working on Mac Mouse Fix made me discover a passion for programming, and led me to enroll in a Computer Science Degree at college, which has been awesome so far. Feel free to contribute to contribute to Mouse Fix on <a href="https://github.com/noah-nuebling/mac-mouse-fix">GitHub</a>!
+                </div>
+
+                <div class="sec--questions">
+
+                    <h2 class="sec-title">Questions</h2>
+
+                    <h3 class="sec-txt__header">Why make it? There are already apps for smooth scrolling and remapping mouse buttons.</h3>
+                    <p class="sec-txt">
+                        I was looking for a way to use Spaces and Mission Control from my mouse. I found some great software like Steer Mouse and BetterTouchTool, but none of it was free. So I decided to build my own - 100% free - solution. I worked on the smooth scrolling algorithm mostly because it was a lot of fun and I also think it fits Mac Mouse Fix really well.
+                    </p>
+                    <h3 class="sec-txt__header">Does Mouse Fix track your information?</h3>
+                    <p class="sec-txt">
+                        I'm committed to your privacy. Mouse Fix does not have ads and it doesn't track any information about you. This Website uses Hotjar which is a more privacy focused alternative to Google Analytics to see how many times the site was visited and how many times the download button was clicked. You can view all recorded data
+                        <a href="https://insights.hotjar.com/h?site=1503356&heatmap=4798270&token=c7342782d05717afbdeb777fb8ec62d1">here</a>.
+                    </p>
+                    <h3 class="sec-txt__header">Why do I need to give Mac Mouse Fix accessibility permissions?</h3>
+                    <p class="sec-txt">
+                        Mac Mouse Fix, more precisely its helper app 'Mouse Fix Helper' which runs in the background when Mouse Fix is turned on, needs these permissions to catch input from mouse buttons 3, 4, and 5, as well as the scrollwheel, and the keyboard (so you can scroll horizontally when pressing shift).
+                        <br><br>
+                        Based on these inputs Mouse Fix will then generate its own artificial input events and insert them into the event stream. Mouse Fix generates artificial scroll events to realize its smooth scrolling algorithm, and it generates artificial touch events to implement the "Back and Forward" option. Most other functions like Mission Control are realized by sending artificial keyboard events.
+                        <br><br>
+                        For all the details you can look at the Mac Mouse Fix source code on <a href="https://github.com/noah-nuebling/mac-mouse-fix">GitHub</a>.
+                    </p>
+                </div>
+
+                <section class="Footer">
+                    <a href="https://github.com/noah-nuebling" class="FooterLink">GitHub</a>
+                    <a href="mailto:noah.n.public@gmail.com?subject=Mac Mouse Fix - Contact&" class="FooterLink">Questions, Feedback, Feature Requests</a>
+                    <img onclick="location.href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ARSTVR6KFB524&source=url'" class="DonationButton" src="../resources/Donation%20Button.jpg" alt="Donation Button">
+
+                </section>
+            </div>
+            <hr class="rule">
+
+
+
         </div>
     </body>
     
