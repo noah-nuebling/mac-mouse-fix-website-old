@@ -150,6 +150,7 @@ h1 {
     background-color: var(--accent2);
     min-width: calc(var(--titleScale) * 240px);
     height: calc(var(--titleScale) * 65px);
+    border-style: hidden;
     border-radius: calc(var(--titleScale) * 200px);
     color: white;
     font-size: calc(var(--titleScale) * 25px);
