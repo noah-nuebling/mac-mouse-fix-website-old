@@ -93,7 +93,7 @@ a {
 
 .top-bar__title {
 
-
+  align-self: center;
   justify-self: center;
   display: flex;
   flex-direction: row;

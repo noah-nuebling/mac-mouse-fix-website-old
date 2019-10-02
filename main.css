@@ -20,7 +20,6 @@ html {
     zoom: 100%;
     /*min-width: 560px;*/
     width: 100%;
-    min-width: calc(var(--titleScale) * 750px);
     background-size: cover;
 }
 
@@ -49,6 +48,12 @@ html {
 
 
 body {
+
+    /*padding: 0 20px 0 20px;*/
+
+    display: flex;
+    flex-direction: column;
+
     min-width: 100%;
     margin-left: 0px;
     margin-right: 0px;
@@ -64,26 +69,30 @@ h1 {
 }
 .nav {
 
-
-    margin: 31px 0 0px 20px;
+    margin: 31px 0 -40px 20px;
 
     display: flex;
 
     align-items: center;
 
-
     justify-self: start;
 
+}
+@media only screen and (max-width: 768px)  {
+    .nav {
+        align-self: center;
+        margin: 10px 0 0 0;
+    }
 }
 .nav__link {
 
     color: #9A9A9A;
-    margin-right: 10px;
     text-decoration-line: none;
+    margin: 0 5px 0 5px;
 }
 .nav__link--active {
     color: black;
-    margin-right: 10px;
+    margin: 0 5px 0 5px;
     text-decoration-line: none;
 }
 
@@ -105,6 +114,9 @@ h1 {
     color: var(--accent2);
 }
 .DownloadDiv {
+
+
+    align-self: center;
     margin-left: calc(var(--titleScale) * 205px);
     margin-bottom: calc(var(--titleScale) * 30px);
     
@@ -114,18 +126,13 @@ h1 {
     
 }
 
-#mouseFixIcon {
-    width: calc(var(--titleScale) * 40px);
-    margin-right: 0px;
-    margin-left: calc(var(--titleScale) * 18px);
-}
 .DownloadButton {
     
     cursor: pointer;
 
     background-color: var(--accent2);
     border: 0;
-    width: calc(var(--titleScale) * 240px);
+    min-width: calc(var(--titleScale) * 240px);
     height: calc(var(--titleScale) * 65px);
     border-radius: calc(var(--titleScale) * 200px);
     color: white;
@@ -141,14 +148,48 @@ h1 {
     transform: scale(1.01,1.01); /*translate(0px,-1px);*/
 }
 
+.icon-div {
+    display: flex;
+}
 
-.ButtonDescription {
+#mouseFixIcon {
+    width: calc(var(--titleScale) * 40px);
+    height: calc(var(--titleScale) * 40px);
+    margin-right: 0px;
+    margin-left: calc(var(--titleScale) * 18px);
+}
+.macos-compat {
     margin: calc(var(--titleScale) * 10px);
     
     color: var(--light2);
     font-size: calc(var(--titleScale) * 16.5px);
     font-weight: 400;
 }
+
+@media only screen and (max-width: 768px) {
+    .DownloadDiv {
+        flex-direction: column;
+        align-items: center;
+        margin-left: calc(var(--titleScale) * 0px);
+        margin-top: -5px;
+    }
+
+    .DownloadButton {
+    }
+    .icon-div {
+        margin: 5px 0 -15px 0;
+    }
+    #mouseFixIcon {
+        transform: scale(0.6);
+        margin: 0;
+    }
+    .macos-compat {
+        margin: calc(var(--titleScale) * 10px);
+        margin-left: 0;
+    }
+
+}
+
 .Subtitle {
     
     font-size: calc(var(--titleScale) * 15px);
@@ -178,7 +219,7 @@ h1 {
 
 
 .SHBase {                   /* SH -> Section Header*/
-    margin: 50px 0 20px 0;
+    margin: 50px 10px 20px 10px;
     font-size: 30px;
     color: var(--light2);
     font-weight:400;
@@ -195,7 +236,7 @@ h1 {
 
 
 .sec-desc--top {
-    margin: 0 0 0 0;
+    margin: 0 20px 0 20px;
     color: var(--light2);
     font-size: 16.5px;
     font-weight: 400
@@ -234,6 +275,13 @@ h1 {
 
     transition: all 0.5s ease 0.0s;
 
+}
+
+@media only screen and (max-width: 600px) {
+    .video-container {
+        max-width: 100%;
+        min-width: 100%;
+    }
 }
 
 .video-container.elevate {
