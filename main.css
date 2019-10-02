@@ -120,7 +120,7 @@ h1 {
 
 @media only screen and (max-width: 768px) {
     .Title1 {
-        font-size: calc(var(--titleScale) * 40px);
+        font-size: calc(var(--titleScale) * 35px);
         margin-bottom: -10px;
     }
     .Title2_1 {
@@ -168,6 +168,7 @@ h1 {
 
 .icon-div {
     display: flex;
+    align-items: center;
 }
 
 #mouseFixIcon {
@@ -198,8 +199,8 @@ h1 {
         margin: 5px 0 -15px 0;
     }
     #mouseFixIcon {
-        transform: scale(0.6);
-        margin: 0;
+        transform: scale(0.7);
+        margin: 0 0px 0 0;
     }
     .macos-compat {
         margin: calc(var(--titleScale) * 10px);
@@ -256,10 +257,13 @@ h1 {
 
 
 .sec-desc--top {
+
+
     margin: 0 40px 0 40px;
     color: var(--light2);
     font-size: 16.5px;
-    font-weight: 400
+    font-weight: 400;
+
 }
 
 .sec-desc--bottom {
@@ -272,6 +276,15 @@ h1 {
     color: var(--light2);
     font-size: 16.5px;
     font-weight: 400
+}
+
+.rwd-line {
+    display: inline;
+}
+@media only screen and (min-width: 768px) {
+    .rwd-line {
+        display: block;
+    }
 }
 
 .video-container {
