@@ -121,6 +121,7 @@ h1 {
 @media only screen and (max-width: 768px) {
     .Title1 {
         font-size: calc(var(--titleScale) * 35px);
+        margin-bottom: -11px;
     }
     .Title2_1 {
         font-size: calc(var(--titleScale) * 60px);
