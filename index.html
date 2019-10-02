@@ -6,7 +6,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Mac Mouse Fix - A simple way to make your mouse better.</title>
-        <meta name="description" content="Remap Buttons, and Scroll Smoothly.">
+        <meta name="author" content="Noah Nuebling">
+        <meta name="description" content="
+            Switch between Spaces, use Windows-style Back and Forward, and more - right from your mouse. Also features a refined Smooth-Scrolling algorithm that strikes a perfect balance between fluidity and control.
+        ">
+        <link rel="shortcut icon" href="resources/Mouse_Fix.png">
         <link rel="stylesheet" href="main.css">
 
         <!-- jquery -->
@@ -30,8 +34,8 @@
         <div class="TopBar"></div>
 
         <div class="nav">
-            <a class="nav__link--active" href="https://www.mousefix.org/">Home</a>
-            <a class="nav__link" href="https://www.mousefix.org/about/">About</a>
+            <a class="nav__link--active" href="">Home</a>
+            <a class="nav__link" href="about/">About</a>
         </div>
 
         <!-- Title -->
@@ -44,7 +48,7 @@
                 window.location.href='maindownload/MacMouseFix.zip';
             "
                     type="button" class="DownloadButton">Download</button>
-            <img id="mouseFixIcon" src="resources/Mouse_Fix.png" alt="alternative text ?">
+            <img id="mouseFixIcon" src="resources/Mouse_Fix.png" alt="Mac Mouse Fix Icon">
             <p class="ButtonDescription">for macOS 10.11+</p>
         </div>
 
@@ -55,7 +59,7 @@
         
         <section id="graySec1" class="GraySection">
             <h2 class="SHBase">
-                <span class="SHBlack">Mission Control</span> and <span class="SHBlue"> More</span>...
+                Remap to <span class="SHBlack">Mission Control</span> and <span class="SHBlue"> More</span>.
             </h2>
             <p class="sec-desc--top">
                 Do the things you do with a trackpad. Without a trackpad.
@@ -65,7 +69,8 @@
                        class="video"
                        controls
                        preload="auto"
-                       playsinline>
+                       playsinline
+                        alt="Remap Demo">
                     <source src="resources/remap_demo_handbrake.mp4#t=0.1" type="video/mp4">
                 </video>
             </div>
@@ -83,7 +88,8 @@
                    class="video"
                    controls
                    preload="auto"
-                   playsinline>
+                   playsinline
+                   alt="Smooth Scroll Demo">
                 <source src="resources/scroll_demo.mp4#t=0.1" type="video/mp4">
             </video>
         </div>
@@ -99,7 +105,7 @@
                     You won't notice Mouse Fix, except in System Preferences, and of course when using your mouse.
                 </p>
                 <div class="UIPicture-cont">
-                    <img id="pic1" class="UIPicture" src="resources/syspref.png" alt="UI Picture">
+                    <img id="pic1" class="UIPicture" src="resources/syspref.png" alt="System Preferences Screenshot">
                 </div>
 
             </div>
@@ -122,40 +128,40 @@
 
 
 
-<script>
+<!--<script>-->
 
 
-    window.onresize = function() {
-        let gs = document.getElementById("graySec1");
-        console.log("g: " + gs.clientWidth);
-        console.log("w: " + window.innerWidth + "\n");
-        console.log("");
+<!--    window.onresize = function() {-->
+<!--        let gs = document.getElementById("graySec1");-->
+<!--        console.log("g: " + gs.clientWidth);-->
+<!--        console.log("w: " + window.innerWidth + "\n");-->
+<!--        console.log("");-->
 
-    };
+<!--    };-->
 
-    <!--elevate video on play-->
+<!--    &lt;!&ndash;elevate video on play&ndash;&gt;-->
 
-    let vid1 = document.getElementById("vid1");
-    let vid1Cont = vid1.parentElement;
-    vid1.onplay = function() {
-        vid1Cont.classList.add("elevate");
-    };
-    vid1.onpause = function() {
-        vid1Cont.classList.remove("elevate");
-    };
+<!--    let vid1 = document.getElementById("vid1");-->
+<!--    let vid1Cont = vid1.parentElement;-->
+<!--    vid1.onplay = function() {-->
+<!--        vid1Cont.classList.add("elevate");-->
+<!--    };-->
+<!--    vid1.onpause = function() {-->
+<!--        vid1Cont.classList.remove("elevate");-->
+<!--    };-->
 
-    let vid2 = document.getElementById("vid2");
-    let vid2Cont = vid2.parentElement;
-    vid2.onplay = function() {
-        vid2Cont.classList.add("elevate");
-    };
-    vid2.onpause = function() {
-        vid2Cont.classList.remove("elevate");
-    };
+<!--    let vid2 = document.getElementById("vid2");-->
+<!--    let vid2Cont = vid2.parentElement;-->
+<!--    vid2.onplay = function() {-->
+<!--        vid2Cont.classList.add("elevate");-->
+<!--    };-->
+<!--    vid2.onpause = function() {-->
+<!--        vid2Cont.classList.remove("elevate");-->
+<!--    };-->
 
 
-    /*
-    let pic1 = document.getElementById("pic1");
-    */
+<!--    /*-->
+<!--    let pic1 = document.getElementById("pic1");-->
+<!--    */-->
 
-</script>
+<!--</script>-->
