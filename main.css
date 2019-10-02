@@ -69,7 +69,7 @@ h1 {
 }
 .nav {
 
-    margin: 31px 0 -40px 20px;
+    margin: 23px 0 -40px 20px;
 
     display: flex;
 
@@ -81,7 +81,7 @@ h1 {
 @media only screen and (max-width: 768px)  {
     .nav {
         align-self: center;
-        margin: 10px 0 0 0;
+        margin: 9px 0 0 0;
     }
 }
 .nav__link {
@@ -97,14 +97,18 @@ h1 {
 }
 
 .Title1 {
-    font-size: calc(var(--titleScale) * 30px);
+    font-size: calc(var(--titleScale) * 40px);
 
     color: var(--light1);
     margin-top: calc(var(--titleScale) * 20px);
     margin-bottom: calc(var(--titleScale) * -20px);
 }
 .Title2_1 {
+
+    /*font-size: calc(var(--titleScale) * 60px);*/
+
     letter-spacing: -2px;
+
     color: var(--accent1);
     margin-top: 0px;
     margin-bottom: calc(var(--titleScale) * 15px);
@@ -113,6 +117,19 @@ h1 {
 .Title2_2 {
     color: var(--accent2);
 }
+
+@media only screen and (max-width: 768px) {
+    .Title1 {
+        font-size: calc(var(--titleScale) * 35px);
+    }
+    .Title2_1 {
+        font-size: calc(var(--titleScale) * 60px);
+    }
+    /*.Title2_2 {*/
+    /*    font-size: calc(var(--titleScale) * 30px);*/
+    /*}*/
+}
+
 .DownloadDiv {
 
 
@@ -131,7 +148,6 @@ h1 {
     cursor: pointer;
 
     background-color: var(--accent2);
-    border: 0;
     min-width: calc(var(--titleScale) * 240px);
     height: calc(var(--titleScale) * 65px);
     border-radius: calc(var(--titleScale) * 200px);
@@ -198,6 +214,8 @@ h1 {
     font-kerning: auto;
     margin-top: 0px;
     margin-bottom: calc(var(--titleScale) * 30px);
+    margin-left: 20px;
+    margin-right: 20px;
     letter-spacing: 0px;
 }
 
@@ -256,6 +274,7 @@ h1 {
 
 .video-container {
 
+
     display: block;
 
 
@@ -263,7 +282,7 @@ h1 {
     overflow: hidden;
 
     max-width: 62.5%;
-    min-width: 600px;
+    min-width: 768px;
     height: fit-content;
 
     margin: 25px auto 50px auto;
@@ -277,8 +296,11 @@ h1 {
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .video-container {
+
+        /*border-style: solid;*/
+
         max-width: 100%;
         min-width: 100%;
     }
@@ -350,6 +372,13 @@ h1 {
 
     background-color: transparent;
     /*border-style: solid;*/
+}
+
+@media only screen and (max-width: 520px) {
+    .UIPicture-cont {
+        min-width: calc(100% - 20px);
+        min-width: calc(100% - 20px);
+    }
 }
 
 .UIPicture {

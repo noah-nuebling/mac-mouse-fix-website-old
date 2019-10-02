@@ -41,7 +41,7 @@ a {
   color: inherit;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .top-bar {
 
     display: flex;
@@ -55,7 +55,7 @@ a {
     margin: 0 0 10px 0;
   }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .top-bar {
 
     display: grid;
@@ -79,15 +79,22 @@ a {
   justify-self: start;
 
 }
+@media only screen and (max-width: 768px) {
+  .nav {
+    margin: 0 0 0 0;
+  }
+}
 .nav__link {
 
+
   color: #9A9A9A;
-  margin-right: 10px;
+  margin: 0 5px 0 5px;
   text-decoration-line: none;
 }
 .nav__link--active {
+
   color: black;
-  margin-right: 10px;
+  margin: 0 5px 0 5px;
   text-decoration-line: none;
 }
 
