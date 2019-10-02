@@ -1,3 +1,10 @@
+
+.disclaimer {
+  text-align: center;
+  font-style: italic;
+}
+
+
 :root {
   --light1:   #BEBEBE; /* lightest grey */
   --light2:   #9A9A9A; /* mid grey */
