@@ -44,8 +44,6 @@ a {
 @media only screen and (max-width: 600px) {
   .top-bar {
 
-    border-style: solid;
-
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -60,8 +58,6 @@ a {
 @media only screen and (min-width: 600px) {
   .top-bar {
 
-    border-style: solid;
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
@@ -74,8 +70,6 @@ a {
 }
 
 .nav {
-  border-style: solid;
-
   display: flex;
 
   align-items: center;
