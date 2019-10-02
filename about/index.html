@@ -34,7 +34,8 @@
                     <h2 class="sec-title">Hi There!</h2>
                     <p class="sec-txt">
                         My name is Noah and I made Mac Mouse Fix. When I started out I was completely new to software development but with the power of Google, Stack Overflow, and Apple's Developer Documentation at my fingertips I managed to learn what is necessary to deliver a solid little app that I hope will be useful for you guys.
-                        Working on Mac Mouse Fix made me discover a passion for programming, and led me to enroll in a Computer Science Degree at college, which has been awesome so far. Feel free to contribute to Mouse Fix on <a href="https://github.com/noah-nuebling/mac-mouse-fix">GitHub</a>!
+                        <br>
+                        Working on Mac Mouse Fix made me discover a passion for programming, and led me to enroll in a Computer Science Degree at college, which has been awesome so far. I probably won't have a lot of time to work on Mouse Fix next semester, but please feel free to make your own contributions to Mac Mouse Fix on <a href="https://github.com/noah-nuebling/mac-mouse-fix">GitHub</a>!
                 </div>
 
                 <div class="sec--questions">
@@ -43,7 +44,7 @@
 
                     <h3 class="sec-txt__header">Why make it? There are already apps for smooth scrolling and remapping mouse buttons.</h3>
                     <p class="sec-txt">
-                        I was looking for a way to use Spaces and Mission Control from my mouse. I found some great software like Steer Mouse and BetterTouchTool, but none of it was free. So I decided to build my own - 100% free - solution. I worked on the smooth scrolling algorithm mostly because it was a lot of fun and I also think it fits Mac Mouse Fix really well.
+                        I was looking for a way to use Spaces and Mission Control from my mouse. I found some great software like Steer Mouse and BetterTouchTool, but none of it was free. So I decided to build my own - 100% free - solution. I worked on the smooth scrolling algorithm mostly because it was a lot of fun but I also think it fits Mac Mouse Fix really well.
                     </p>
                     <h3 class="sec-txt__header">Does Mouse Fix track your information?</h3>
                     <p class="sec-txt">
@@ -52,9 +53,9 @@
                     </p>
                     <h3 class="sec-txt__header">Why do I need to give Mac Mouse Fix accessibility permissions?</h3>
                     <p class="sec-txt">
-                        Mac Mouse Fix, more precisely its helper app 'Mouse Fix Helper' which runs in the background when Mouse Fix is turned on, needs these permissions to intercept input from mouse buttons 3, 4, and 5, as well as the scroll wheel, and the shift key (so you can scroll horizontally when pressing shift).
-                        <br><br>
-                        Based on these inputs Mouse Fix will then generate its own artificial input events and insert them into the event stream. Mouse Fix generates artificial scroll events to realize its smooth scrolling algorithm, and it generates artificial touch events to implement the "Back and Forward" option. Most other functions like Mission Control are implemented by sending artificial keyboard events.
+                        Mac Mouse Fix, more precisely its helper application 'Mouse Fix Helper' which runs in the background when Mouse Fix is turned on, needs these permissions to intercept input from the middle mouse button, and the two side buttons, as well as the scroll wheel, and the shift key (so you can scroll horizontally when pressing shift).
+                        <br>
+                        To implement its features, Mouse Fix will then send its own - completely artificial - input events, based on your actual inputs, in order to trick the computer into thinking that a certain keyboard shortcut has been pressed, or that a certain touch input has occurred, or that a trackpad-like device has scrolled a certain distance.
                         <br><br>
                         For all the details you can look at the Mac Mouse Fix source code on <a href="https://github.com/noah-nuebling/mac-mouse-fix">GitHub</a>.
                     </p>
