@@ -377,8 +377,8 @@ h1 {
 
 @media only screen and (max-width: 520px) {
     .UIPicture-cont {
-        min-width: calc(100% - 20px);
-        min-width: calc(100% - 20px);
+        min-width: calc(100% - 40px);
+        min-width: calc(100% - 40px);
     }
 }
 
