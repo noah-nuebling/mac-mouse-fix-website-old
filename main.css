@@ -125,6 +125,7 @@ h1 {
     }
     .Title2_1 {
         font-size: calc(var(--titleScale) * 60px);
+        margin-bottom: 30px;
     }
     /*.Title2_2 {*/
     /*    font-size: calc(var(--titleScale) * 30px);*/
