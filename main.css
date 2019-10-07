@@ -436,22 +436,21 @@ h1 {
 
 
     margin-top: 0px;
-    margin-left: 2%;
+    padding: 0 5% 0 5%;
     display: flex;
     align-items: center;
     
-    width: 98%;
     height: 70px;
     text-align: left
 }
 
 .FooterLink {
-    margin-top: 50px;
+
     font-size: 13px;
     color: var(--light2);
     text-decoration: none;
-    margin: 25px;
-    margin-bottom: 15px;
+
+    margin: 25px calc(20px + 2%) 15px 0px;
 }
 
 .DonationButton {

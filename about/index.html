@@ -31,7 +31,9 @@
 
             <div class="main-content">
 
-                <div class="sec--intro">
+<!--                <p class="disclaimer">Bluetooth Mice are currently not fully supported. I plan on pushing an update which fixes this issue within the next month.</p>-->
+
+                <div class="sec--intro innerContent">
                     <h2 class="sec-title">Hi There!</h2>
                     <p class="sec-txt">
                         My name is Noah and I made Mac Mouse Fix. When I started this project I was completely new to software development, but with the power of Google, Stack Overflow, and Apple's Developer Documentation at my fingertips I managed to learn what is necessary to deliver a solid little app that I hope will be useful for you guys.
@@ -40,36 +42,48 @@
                 </div>
 
                 <div class="sec--questions">
+                    <div class="innerContent">
+                        <h2 class="sec-title">Questions</h2>
 
-                    <h2 class="sec-title">Questions</h2>
-
-                    <h3 class="sec-txt__header">Why make it? There are already apps for smooth scrolling and remapping mouse buttons.</h3>
-                    <p class="sec-txt">
-                        I was looking for an easy way to use Spaces and Mission Control from my mouse. I found some great software like Steer Mouse and BetterTouchTool, but none of it was free. So I decided to build my own - 100% free - solution. I worked on the smooth scrolling algorithm mostly because it was a lot of fun, but also because I think it fits Mac Mouse Fix really well.
-                    </p>
-                    <h3 class="sec-txt__header">Does Mouse Fix track your information?</h3>
-                    <p class="sec-txt">
-                        I'm committed to your privacy. Mouse Fix does not have ads and it doesn't track any information about you. This Website uses Hotjar which is a more privacy focused alternative to Google Analytics to see how many times the site was visited and how many times the download button was clicked. You can view all recorded data
-                        <a href="https://insights.hotjar.com/h?site=1503356&heatmap=4798270&token=c7342782d05717afbdeb777fb8ec62d1">here</a>.
-                    </p>
-                    <h3 class="sec-txt__header">Why do I need to give Mac Mouse Fix accessibility permissions?</h3>
-                    <p class="sec-txt">
-                        Mac Mouse Fix uses these permissions to intercepta input from the middle mouse button and the two side buttons, as well as the scroll wheel and the shift key (so you can scroll horizontally when pressing shift).
-                        <br>
-                        Based on this real input, Mac Mouse Fix creates its own, artificial input events, in order to trick the computer into thinking that a certain keyboard shortcut has been pressed, or that a certain touch input has occurred, or that a trackpad-like device has scrolled a certain distance.
-                        <br><br>
-                        For all the details you can look at the Mac Mouse Fix source code on <a href="https://github.com/noah-nuebling/mac-mouse-fix">GitHub</a>.
-                    </p>
+                        <h3 class="sec-txt__header">Why make it? There are already apps for smooth scrolling and remapping mouse buttons.</h3>
+                        <p class="sec-txt">
+                            I was looking for an easy way to use Spaces and Mission Control from my mouse. I found some great software like Steer Mouse and BetterTouchTool, but none of it was free. So I decided to build my own - 100% free - solution. I worked on the smooth scrolling algorithm mostly because it was a lot of fun, but also because I think it fits Mac Mouse Fix really well.
+                        </p>
+                        <h3 class="sec-txt__header">Does Mouse Fix track your information?</h3>
+                        <p class="sec-txt">
+                            I'm committed to your privacy. Mouse Fix does not have ads and it doesn't track any information about you. This Website uses Hotjar which is a more privacy focused alternative to Google Analytics to see how many times the site was visited and how many times the download button was clicked. You can view all recorded data
+                            <a href="https://insights.hotjar.com/h?site=1503356&heatmap=4798270&token=c7342782d05717afbdeb777fb8ec62d1">here</a>.
+                        </p>
+                        <h3 class="sec-txt__header">Why do I need to give Mac Mouse Fix accessibility permissions?</h3>
+                        <p class="sec-txt">
+                            Mac Mouse Fix uses these permissions to intercepta input from the middle mouse button and the two side buttons, as well as the scroll wheel and the shift key (so you can scroll horizontally when pressing shift).
+                            <br>
+                            Based on this real input, Mac Mouse Fix creates its own, artificial input events, in order to trick the computer into thinking that a certain keyboard shortcut has been pressed, or that a certain touch input has occurred, or that a trackpad-like device has scrolled a certain distance.
+                            <br><br>
+                            For all the details you can look at the Mac Mouse Fix source code on <a href="https://github.com/noah-nuebling/mac-mouse-fix">GitHub</a>.
+                        </p>
+                    </div>
                 </div>
 
-                <section class="Footer">
+                <div class="sec--changelog innerContent">
+                    <h2 class="sec--title">Latest Release</h2>
+                    <p class="sec-txt">Version 0.9.1</p>
+                    <h3 class="sec-txt__header">New in this update</h3>
+                    
+                </div>
+
+                <hr class="rule">
+
+                <section class="Footer innerContent">
                     <a href="https://github.com/noah-nuebling" class="FooterLink">GitHub</a>
                     <a href="mailto:noah.n.public@gmail.com?subject=Mac Mouse Fix - Contact&" class="FooterLink">Questions, Feedback, Feature Requests</a>
                     <img onclick="location.href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ARSTVR6KFB524&source=url&lc=en_US'" class="DonationButton" src="../resources/Donation%20Button.jpg" alt="Donation Button">
-
                 </section>
-            </div>
-            <hr class="rule">
+
+                <hr class="rule">
+
+
+
 
 
 

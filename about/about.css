@@ -7,6 +7,9 @@
 
 
 :root {
+
+  --innerContentWidth: 1500px;
+
   --light1:   #BEBEBE; /* lightest grey */
   --light2:   #9A9A9A; /* mid grey */
   --light3:   #909090; /* mid grey slightly darker */
@@ -144,33 +147,52 @@ a {
   border-style: none;
   border-top: 1px solid #ECECEC;
 }
+.rule--forcefullsize {
+  position: absolute;
+  left: 30px;
+  width: calc(100vw - 60px);
+  border-style: none;
+  border-top: 1px solid #ECECEC;
+}
 
 .main-content {
-  max-width: 1500px;
   width: 100%;
 }
 
 .sec--intro {
+
   padding: 20px 5% 20px 5%;
 }
 .sec--questions {
   padding: 20px 5% 20px 5%;
   background-color: var(--backgroundGray);
 }
+.sec--changelog {
+  padding: 20px 5% 20px 5%;
+}
+
+.innerContent {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--innerContentWidth);
+}
 
 .sec-title {
 
+  align-self: center;
   font-size: 27px;
   color: var(--accent1);
 }
 
 .sec-txt {
+
   font-size: 16px;
   color: var(--accent1);
 
-  margin: 0 0 20px 0;
+  margin-bottom: 20px;
 }
 .sec-txt__header {
+
   font-weight: bold;
   font-size: 16px;
   color: var(--accent1);
@@ -185,12 +207,13 @@ a {
   white-space: nowrap;
 
 
-  margin: 5px 0 10px 0;
-  padding: 0 0 0 5%;
+  margin: 5px auto 10px auto;
+  padding: 0 5% 0 5%;
   display: flex;
   align-items: center;
 
 
+  min-height: 70px;
   height: 70px;
   text-align: left
 }
@@ -201,7 +224,7 @@ a {
   text-decoration: none;
 
 
-  margin: 25px 50px 15px 0px;
+  margin: 25px calc(20px + 2%) 15px 0px;
 
 }
 
