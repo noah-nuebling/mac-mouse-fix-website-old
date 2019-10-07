@@ -8,7 +8,7 @@
 
 :root {
 
-  --innerContentWidth: 1500px;
+  --innerContentWidth: 1000px;
 
   --light1:   #BEBEBE; /* lightest grey */
   --light2:   #9A9A9A; /* mid grey */
@@ -49,7 +49,8 @@ body {
 }
 
 a {
-  color: inherit;
+  color: #0948be;
+  text-decoration-line: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -198,9 +199,6 @@ a {
   color: var(--accent1);
 }
 
-
-
-
 .Footer {
 
   overflow: auto;
@@ -214,7 +212,6 @@ a {
 
 
   min-height: 70px;
-  height: 70px;
   text-align: left
 }
 

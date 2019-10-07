@@ -56,9 +56,9 @@
                         </p>
                         <h3 class="sec-txt__header">Why do I need to give Mac Mouse Fix accessibility permissions?</h3>
                         <p class="sec-txt">
-                            Mac Mouse Fix uses these permissions to intercepta input from the middle mouse button and the two side buttons, as well as the scroll wheel and the shift key (so you can scroll horizontally when pressing shift).
+                            Mac Mouse Fix uses these permissions to intercept input from the middle mouse button and the two side buttons, as well as the scroll wheel and the shift key (so you can scroll horizontally when pressing shift).
                             <br>
-                            Based on this real input, Mac Mouse Fix creates its own, artificial input events, in order to trick the computer into thinking that a certain keyboard shortcut has been pressed, or that a certain touch input has occurred, or that a trackpad-like device has scrolled a certain distance.
+                            Based on this input, Mac Mouse Fix then creates its own, artificial input events, in order to trick the computer into thinking that a certain keyboard shortcut has been pressed, or that a certain touch input has occurred, or that a trackpad-like device has scrolled a certain distance.
                             <br><br>
                             For all the details you can look at the Mac Mouse Fix source code on <a href="https://github.com/noah-nuebling/mac-mouse-fix">GitHub</a>.
                         </p>
@@ -66,10 +66,17 @@
                 </div>
 
                 <div class="sec--changelog innerContent">
-                    <h2 class="sec--title">Latest Release</h2>
+                    <h2 class="sec-title">Latest Release</h2>
                     <p class="sec-txt">Version 0.9.1</p>
                     <h3 class="sec-txt__header">New in this update</h3>
-                    
+                    <ul class="sec-txt">
+                        <li>Mac Mouse Fix now works under macOS 10.15 Catalina!</li>
+                        <li>Added full support for Bluetooth mice!</li>
+                        <li>Scrolling and zooming now works better with applications like Pixelmator, Photoshop, Terminal, and more!</li>
+                        <li>Streamlined remapping options. (The option to remap to Launchpad was removed entirely, see the full Changelog for an explanation.)</li>
+                        <li>Various small improvements.</li>
+                    </ul>
+                    <p class="sec-txt">See the <a class="blueLink" href="https://github.com/noah-nuebling/mac-mouse-fix/blob/master/CHANGELOG.md">Changelog</a> on GitHub for more info and a full update history.</p>
                 </div>
 
                 <hr class="rule">
@@ -81,11 +88,6 @@
                 </section>
 
                 <hr class="rule">
-
-
-
-
-
 
         </div>
     </body>
