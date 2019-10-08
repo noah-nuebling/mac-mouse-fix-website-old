@@ -84,8 +84,11 @@ h1 {
         margin: 9px 0 0 0;
     }
 }
-.nav__link {
 
+.overlay {
+    z-index: 2;
+}
+.nav__link {
     color: #9A9A9A;
     text-decoration-line: none;
     margin: 0 5px 0 5px;
