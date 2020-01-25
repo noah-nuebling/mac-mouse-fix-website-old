@@ -466,11 +466,13 @@ h1 {
 .footer {
 
 
+    /*Trying to create a fade out effect on the right edge.*/
 
-    border-style: solid;
+    /*border-style: solid;*/
+    /*background-image: linear-gradient(to right, rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,0,1));*/
+    /*background-size: cover;ent();*/
 
-    background-image: linear-gradient(to right, rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,0,1));
-    background-size: cover;ent();
+
     overflow: auto;
     white-space: nowrap;
 
@@ -493,7 +495,7 @@ h1 {
 }
 
 .donation-button {
-    margin-left: 25px;
+    margin-left: 0px;
     margin-right: 25px;
     margin-bottom: 5px;
     height: 40px;
