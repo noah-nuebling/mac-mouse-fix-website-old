@@ -431,7 +431,7 @@ h1 {
 /* FOOTER */
 
 
-.Footer {
+.footer {
 
     overflow: auto;
     white-space: nowrap;
@@ -446,7 +446,7 @@ h1 {
     text-align: left
 }
 
-.FooterLink {
+.footer-link {
 
     font-size: 13px;
     color: var(--light2);
@@ -455,7 +455,7 @@ h1 {
     margin: 25px calc(20px + 2%) 15px 0px;
 }
 
-.DonationButton {
+.donation-button {
     margin-left: 25px;
     margin-right: 25px;
     margin-bottom: 5px;

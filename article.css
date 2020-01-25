@@ -144,9 +144,14 @@ a {
   color: var(--accent2);
 }
 
-.rule {
+.footer__rule {
   margin: 0 30px 0 30px;
   width: calc(100% - 40px);
+  border-style: none;
+  border-top: 1px solid #ECECEC;
+}
+.sec__rule {
+  margin: 0 30px 0 30px;
   border-style: none;
   border-top: 1px solid #ECECEC;
 }
@@ -286,7 +291,7 @@ video {
   text-align: left
 }
 
-.FooterLink {
+.footer-link {
   font-size: 13px;
   color: var(--light2);
   text-decoration: none;
@@ -296,7 +301,7 @@ video {
 
 }
 
-.DonationButton {
+.donation-button {
   margin-left: 10px;
   margin-right: 25px;
   margin-bottom: 5px;

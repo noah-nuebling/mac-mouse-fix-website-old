@@ -18,7 +18,8 @@
             <div class="top-bar">
                 <div class="nav">
                     <a class="nav__link" href="../">Home</a>
-                    <a class="nav__link--active" href="">About</a>
+                    <a class="nav__link" href="../about">About</a>
+                    <a class="nav__link--active" href="">Help</a>
                 </div>
 
                 <div class="top-bar__title">
@@ -27,7 +28,7 @@
                 </div>
             </div>
 
-            <hr class="rule">
+            <hr class="footer__rule">
 
             <div class="main-content">
 
@@ -56,18 +57,22 @@
                     <h2 class="sec-txt__header">What is the solution?</h2>
                     <p class="sec-txt">
                         Fortunately <a href="https://github.com/morgannewman">Morgan Newman</a> who has been wonderfully supportive of this little project figured out that Mac Mouse Fix can be installed despite this bug by disabling Gatekeeper, a security feature in macOS which prevents the execution of apps which are not signed and notarized with Apple.
-                        <br><br>
+                        <br>
                         There are two ways to solve this issue, disabling Gatekeeper entirely, or adding a Gatekeeper exception for Mac Mouse Fix. Disabling Gatekeeper entirely is quite easy, but it might make it more likely for you to catch malware. Adding an exeption will not compromise the security of your system in any way, but it is a little more complicated, due to bugs in Catalina's System Preferences.
                     </p>
+
+                    <hr class="sec__rule">
+
                     <!--Solution 1-->
                     <h2 class="sec-header">Solution 1 – Disabling Gatekeeper entirely</h2>
                     <ol class="sec-txt">
                         <li>Open Terminal</li>
-                        <li>Enter the following text and press return</li>
+                        <li>Enter the following command and press the Return key</li>
                         <div class="code-box--on-white">
                             <p class="code-box--on-white__text">sudo spctl --master-disable</p>
                         </div>
-                        <p class="sec-txt">This is what it should look like:</p>
+<!--                        <p class="sec-txt">This is what it should look like:</p>-->
+                            <li>Done</li>
                         <div class="picture-box--on-white">
                             <div class="screenshot-container">
                                 <img src="../resources/terminal_gatekeeper_disable.png" class="screenshot" alt="Screenshot of Terminal - How to disable Gatekeeper">
@@ -80,11 +85,10 @@
                     <h2 class="sec-header">Solution 2 – Adding a Gatekeeper exception for Mac Mouse Fix</h2>
                     <ol class="sec-txt">
                         <li>Install Mac Mouse Fix</li>
-                            <ul>
-                                <li>Double-click the downloaded file</li>
-                            </ul>
-                        <li>Open the Terminal</li>
-                        <li>Enter the following text and press return</li>
+<!--                            <ul>-->
+<!--&lt;!&ndash;                                <li>Double-click the downloaded Preference Pane file</li>&ndash;&gt;-->
+<!--                            </ul>-->
+                        <li>Open the Terminal and enter the following command</li>
                         <div class="code-box--on-white">
                             <p class="code-box--on-white__text">
                                 sudo spctl --add ~/Library/PreferencePanes/Mouse\ Fix.prefPane;
@@ -96,7 +100,8 @@
                                 <li>Right-click its pane in System Preferences and select 'Remove "Mouse Fix" Preference Pane'
                                 </li>
                             </ul>
-                        <li>Reinstall Mac Mouse Fix</li>
+                        <li>Install Mac Mouse Fix again</li>
+                        <li>Done</li>
                         <p class="sec-txt__header">Video Demo</p>
                         <div class="picture-box--on-white">
                             <div class="video-container">
@@ -109,15 +114,16 @@
 
 
 
-                <hr class="rule">
+                <hr class="footer__rule">
 
                 <section class="footer inner-content">
-                    <a href="https://github.com/noah-nuebling/mac-mouse-fix" class="footer__link">GitHub</a>
-                    <a href="mailto:noah.n.public@gmail.com?subject=Mac Mouse Fix - Contact&" class="footer__link">Questions, Feedback, Feature Requests</a>
+                    <a href="https://github.com/noah-nuebling/mac-mouse-fix" class="footer-link">GitHub</a>
+                    <a href="mailto:noah.n.public@gmail.com?subject=Mac Mouse Fix - Contact&" class="footer-link">Questions, Feedback, Feature Requests</a>
                     <img onclick="location.href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ARSTVR6KFB524&source=url&lc=en_US'" class="donation-button" src="../resources/Donation%20Button.jpg" alt="Donation Button">
                 </section>
 
-                <hr class="rule">
+                <hr class="footer__rule">
+            </div>
 
         </div>
     </body>
