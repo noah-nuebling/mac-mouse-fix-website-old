@@ -56,39 +56,13 @@
                     <!--Is there a solution?-->
                     <h2 class="sec-title">The Solution</h2>
                     <p class="sec-txt">
-                        <a href="https://github.com/morgannewman">Morgan Newman</a>, who has been wonderfully supportive of this little project, figured out how to install Mac Mouse Fix despite these issues. He found that, in order to run Mac Mouse Fix, you have to disable Gatekeeper – a security feature in macOS which prevents the execution of apps that are not signed and notarized with Apple.
+                        Thankfully, <a href="https://github.com/morgannewman">Morgan Newman</a>, who has been wonderfully supportive of this little project, figured out how to install Mac Mouse Fix despite these issues. He found that, in order to run Mac Mouse Fix, you have to circumvent Gatekeeper – a security feature in macOS which prevents the execution of apps that are not signed and notarized with Apple.
 
                     </p>
-
-                    <!--Solution 1-->
-                    <h2 class="sec-txt__header">First Solution – Disabling Gatekeeper entirely</h2>
-                    <p class="sec-txt__subheader">
-                        Disabling Gatekeeper will make it easier for you to run malicious software on accident. <!-- but it will prevent any future issues you might have trying to install or update unnotarized software. -->
-                    </p>
-
-                    <ol class="sec-txt">
-                        <li><a href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">Open Terminal</a> and enter the following command</li>
-                        <div class="code-box--on-white">
-                            <p class="code-box--on-white__text">sudo spctl --master-disable</p>
-                        </div>
-<!--                        <p class="sec-txt__header">This is what it should look like</p>-->
-<!--                        <li>Restart System Preferences if it currently running wi</li>-->
-                        <li>If System Preferences is running – close it</li>
-<!--                        <div class="separator"></div>-->
-<!--                        <p class="sec-txt__header">Screenshot of Terminal after entering the command</p>-->
-<!--                        <div class="picture-box&#45;&#45;on-white">-->
-<!--                            <div class="screenshot-container">-->
-<!--                                <img src="../resources/terminal_gatekeeper_disable.png" class="screenshot" alt="Screenshot of Terminal - How to disable Gatekeeper">-->
-<!--                            </div>-->
-<!--                        </div>-->
-                    </ol>
 
                     <!--Solution 2-->
                     
-                    <h2 class="sec-txt__header">Second Solution – Adding a Gatekeeper exception for Mac Mouse Fix</h2>
-                    <p class="sec-txt__subheader">
-                        Adding an exception does not compromise the security of your system.
-                    </p>
+                    <h2 class="sec-txt__header">Adding a Gatekeeper exception for Mac Mouse Fix</h2>
                     <ol class="sec-txt">
                         <li>Install Mac Mouse Fix</li>
 <!--                            <ul>-->
@@ -102,21 +76,46 @@
                             </p>
                         </div>
                         <li>Uninstall Mac Mouse Fix</li>
-                            <ul>
+                            <ol>
                                 <li>Go to System Preferences</li>
                                 <li>Right-click the 'Mouse Fix' pane</li>
                                 <li>Select 'Remove "Mouse Fix" Preference Pane'</li>
-                            </ul>
+                            </ol>
                         <li>Install Mac Mouse Fix again</li>
                     </ol>
 <!--                    <div class="separator"></div>-->
 <!--                    <div class="separator"></div>-->
                     <div class="picture-box--on-white">
-                        <p class="sec-txt__header">Video Demo (Second Solution)</p>
+<!--                        <p class="sec-txt__header">Video Demo – Adding a Gatekeeper exception for Mac Mouse Fix</p>-->
                         <div class="video-container">
                             <video src="../resources/notarization_workaround.mp4" controls></video>
                         </div>
                     </div>
+
+                    <!--Solution 1-->
+<!--                    <h2 class="sec-txt__header">First Solution – Disabling Gatekeeper entirely</h2>-->
+<!--                    <p class="sec-txt__subheader">-->
+<!--                        Disabling Gatekeeper will make it easier for you to run malicious software on accident. &lt;!&ndash; but it will prevent any future issues you might have trying to install or update unnotarized software. &ndash;&gt;-->
+<!--                    </p>-->
+                    <p class="sec-txt__header">Alternatively, you can disable Gatekeeper entirely</p>
+                    <p class="sec-txt__subheader">Note that this will make it easier to accidentally run malicious software.</p>
+                    <ol class="sec-txt">
+                        <li><a href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">Open Terminal</a> and enter the following command</li>
+                        <div class="code-box--on-white">
+                            <p class="code-box--on-white__text">sudo spctl --master-disable</p>
+                        </div>
+                        <!--                        <p class="sec-txt__header">This is what it should look like</p>-->
+                        <!--                        <li>Restart System Preferences if it currently running wi</li>-->
+<!--                        <li>If System Preferences is running – close it</li>-->
+                        <!--                        <div class="separator"></div>-->
+                        <!--                        <p class="sec-txt__header">Screenshot of Terminal after entering the command</p>-->
+                        <!--                        <div class="picture-box&#45;&#45;on-white">-->
+                        <!--                            <div class="screenshot-container">-->
+                        <!--                                <img src="../resources/terminal_gatekeeper_disable.png" class="screenshot" alt="Screenshot of Terminal - How to disable Gatekeeper">-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
+                    </ol>
+
 
                 </div>
 
