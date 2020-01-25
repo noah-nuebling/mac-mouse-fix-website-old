@@ -5,6 +5,8 @@
     border-radius: 10px;
     padding-bottom: 20px;
     margin: -20px 300px -10px 300px;
+    min-width: 800px;
+    align-self: center;
 }
 .disclaimer__text {
     text-align: center;
@@ -14,6 +16,12 @@
 .disclaimer__link {
     color: var(--accent2);
     text-decoration-line: none;
+}
+
+@media only screen and (max-width: 768px)  {
+    .disclaimer {
+        margin:  0;
+    }
 }
 
 
@@ -452,9 +460,14 @@ h1 {
 
 .footer {
 
+
+
+    border-style: solid;
+
+    background-image: linear-gradient(to right, rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,0,1));
+    background-size: cover;ent();
     overflow: auto;
     white-space: nowrap;
-
 
     margin-top: 0;
     padding: 0 5% 0 5%;
