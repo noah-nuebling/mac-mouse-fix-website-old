@@ -3,9 +3,9 @@
     z-index: 5;
     background-color: var(--backgroundGray);
     border-radius: 10px;
-    padding-bottom: 20px;
+    padding: 0px 20px 20px 20px;
     margin: -20px 300px -10px 300px;
-    min-width: 800px;
+    min-width: 300px;
     align-self: center;
 }
 .disclaimer__text {
@@ -20,7 +20,12 @@
 
 @media only screen and (max-width: 768px)  {
     .disclaimer {
-        margin:  0;
+        margin: 20px 0 0 0;
+        padding: 0 10px 0 10px;
+        width: 100%;
+    }
+    .disclaimer__text {
+        margin: 20px 40px 20px 40px;
     }
 }
 
