@@ -42,37 +42,38 @@
                     </p>
                     <div class="picture-box--on-white">
                         <div class="screenshot-container">
-                            <img src="../resources/notarization_popup.png" class="screenshot-small" alt="Warning popup which comes up when you try to open an un-notarized app">
+                            <img src="../resources/notarization_popup.png" class="screenshot-small" alt="Warning popup which comes up when you try to open an unnotarized app">
                         </div>
                     </div>
                     
                     <h3 class="sec-txt__header">Why does this issue occur?</h3>
                     <p class="sec-txt">
-                        There is a new security feature in Catalina called Notarization. Notarized apps are validated by Apple, so you can be sure they don't contain any malware. Notarization is a great safety measure in principle, but there are some issues in the way it is currently implemented which might prevent you from using Preference Panes entirely if they are not notarized. Notarizing an app costs 100 dollars per year, which unfortunately makes it a nonsolution for free and open-source software like Mac Mouse Fix.
+                        There is a new security feature in Catalina called Notarization. Notarized apps are validated by Apple, so you can be sure they don't contain any malware. Notarization is a great safety measure in principle, but there are some issues in the way it is currently implemented which might prevent you from using unnotarized Preference Panes entirely. Notarizing an app costs 100 dollars per year, which unfortunately makes it a nonsolution for free and open-source software like Mac Mouse Fix.
                         <br>
                         Apple will likely fix these issues in the future, but for now, you will, unfortunately, have to rely on a workaround to get Mac Mouse Fix to run on Catalina.
                     </p>
+                    <hr class="sec__rule">
                     <!--Is there a solution?-->
-                    <h2 class="sec-txt__header">What is the solution?</h2>
+                    <h2 class="sec-title">The Solution</h2>
                     <p class="sec-txt">
-                        Thankfully, <a href="https://github.com/morgannewman">Morgan Newman</a>, who has been wonderfully supportive of this little project, figured out how to install Mac Mouse Fix despite this. His solution works by disabling Gatekeeper, a security feature in macOS which prevents the execution of apps that are not signed and notarized with Apple.
-                        <br>
-                        To get Mac Mouse Fix to work, you could either disable Gatekeeper entirely, or you could create a Gatekeeper exception specifically for Mac Mouse Fix. Disabling Gatekeeper entirely might make it more likely for you to run malware on accident, but it will prevent any future headache trying to run un-notarized software. Adding an exception will not compromise the security of your system in any way, but it is slightly more complicated, due to some bugs in Catalina.
+                        <a href="https://github.com/morgannewman">Morgan Newman</a>, who has been wonderfully supportive of this little project, figured out how to install Mac Mouse Fix despite these issues. He found that, in order to run Mac Mouse Fix, you have to disable Gatekeeper – a security feature in macOS which prevents the execution of apps that are not signed and notarized with Apple.
 
                     </p>
 
-                    <hr class="sec__rule">
-
                     <!--Solution 1-->
-                    <h2 class="sec-header">Solution 1 – Disabling Gatekeeper entirely</h2>
+                    <h2 class="sec-txt__header">First Solution – Disabling Gatekeeper entirely</h2>
+                    <p class="sec-txt__subheader">
+                        Disabling Gatekeeper will make it easier for you to run malicious software on accident. <!-- but it will prevent any future issues you might have trying to install or update unnotarized software. -->
+                    </p>
+
                     <ol class="sec-txt">
-                        <li>Open Terminal and enter the following command</li>
+                        <li><a href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">Open Terminal</a> and enter the following command</li>
                         <div class="code-box--on-white">
                             <p class="code-box--on-white__text">sudo spctl --master-disable</p>
                         </div>
 <!--                        <p class="sec-txt__header">This is what it should look like</p>-->
 <!--                        <li>Restart System Preferences if it currently running wi</li>-->
-                        <li>Close System Preferences if it is currently running</li>
+                        <li>If System Preferences is running – close it</li>
 <!--                        <div class="separator"></div>-->
 <!--                        <p class="sec-txt__header">Screenshot of Terminal after entering the command</p>-->
 <!--                        <div class="picture-box&#45;&#45;on-white">-->
@@ -84,13 +85,16 @@
 
                     <!--Solution 2-->
                     
-                    <h2 class="sec-header">Solution 2 – Adding a Gatekeeper exception for Mac Mouse Fix</h2>
+                    <h2 class="sec-txt__header">Second Solution – Adding a Gatekeeper exception for Mac Mouse Fix</h2>
+                    <p class="sec-txt__subheader">
+                        Adding an exception does not compromise the security of your system.
+                    </p>
                     <ol class="sec-txt">
                         <li>Install Mac Mouse Fix</li>
 <!--                            <ul>-->
 <!--&lt;!&ndash;                                <li>Double-click the downloaded Preference Pane file</li>&ndash;&gt;-->
 <!--                            </ul>-->
-                        <li>Open Terminal and enter the following command</li>
+                        <li><a href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">Open Terminal</a> and enter the following command</li>
                         <div class="code-box--on-white">
                             <p class="code-box--on-white__text">
                                 sudo spctl --add ~/Library/PreferencePanes/Mouse\ Fix.prefPane;
@@ -104,14 +108,15 @@
                                 <li>Select 'Remove "Mouse Fix" Preference Pane'</li>
                             </ul>
                         <li>Install Mac Mouse Fix again</li>
-                        <div class="separator"></div>
-                        <p class="sec-txt__header">Video demonstrating solution 2</p>
-                        <div class="picture-box--on-white">
-                            <div class="video-container">
-                                <video src="../resources/notarization_workaround.mp4" controls></video>
-                            </div>
-                        </div>
                     </ol>
+<!--                    <div class="separator"></div>-->
+<!--                    <div class="separator"></div>-->
+                    <div class="picture-box--on-white">
+                        <p class="sec-txt__header">Video Demo (Second Solution)</p>
+                        <div class="video-container">
+                            <video src="../resources/notarization_workaround.mp4" controls></video>
+                        </div>
+                    </div>
 
                 </div>
 
