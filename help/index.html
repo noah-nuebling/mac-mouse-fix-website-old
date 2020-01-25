@@ -38,7 +38,7 @@
                 <div class="sec--white inner-content">
                     <h2 class="sec-title">Notarization Issues</h2>
                     <p class="sec-txt">
-                        If you're using Catalina you might have encountered the following error message when trying to install Mac Mouse Fix.
+                        If you're using macOS 10.15 Catalina you might have encountered the following error message when trying to install Mac Mouse Fix.
                     </p>
                     <div class="picture-box--on-white">
                         <div class="screenshot-container">
@@ -48,37 +48,36 @@
                     
                     <h3 class="sec-txt__header">Why does this issue occur?</h3>
                     <p class="sec-txt">
-                        There is a new security feature in Catalina called "Notarization". Notarized apps have been validated by Apple, so you can be sure they don't contain any malware. Notarization is a great great safety measure in principle, but unfortunately there are some issues in the way it is currently implemented which might prevent you from using Mac Mouse Fix.
+                        There is a new security feature in Catalina called "Notarization". Notarized apps have been validated by Apple, so you can be sure they don't contain any malware. Notarization is a great safety measure in principle, but unfortunately there are some issues in the way it is currently implemented which might prevent you from using Mac Mouse Fix entirely as long as Mac Mouse Fix is not notarised. Notarizing an app costs 100 dollars per year, which is a non-solution for free and open-source software like Mac Mouse Fix.
                         <br>
-                        Apple will likely fix this these issues in the future, but for now, you will unfortunately have to rely on
+                        Apple will likely fix these issues in the future, but for now, you will unfortunately have to rely on
                         a workaround to get Mac Mouse Fix to run on Catalina.
                     </p>
                     <!--Is there a solution?-->
                     <h2 class="sec-txt__header">What is the solution?</h2>
                     <p class="sec-txt">
-                        Fortunately <a href="https://github.com/morgannewman">Morgan Newman</a> who has been wonderfully supportive of this little project figured out that Mac Mouse Fix can be installed despite this bug by disabling Gatekeeper, a security feature in macOS which prevents the execution of apps which are not signed and notarized with Apple.
+                        Fortunately, <a href="https://github.com/morgannewman">Morgan Newman</a> who has been wonderfully supportive of this little project figured out how to install Mac Mouse Fix despite this bug. The workaround works by disabling Gatekeeper, a security feature in macOS which prevents the execution of apps that are not signed and notarized with Apple.
                         <br>
-                        There are two ways to solve this issue, disabling Gatekeeper entirely, or adding a Gatekeeper exception for Mac Mouse Fix. Disabling Gatekeeper entirely is quite easy, but it might make it more likely for you to catch malware. Adding an exeption will not compromise the security of your system in any way, but it is a little more complicated, due to bugs in Catalina's System Preferences.
+                        To get Mac Mouse Fix to work, you could either disable Gatekeeper entirely, or you could create a Gatekeeper exception for Mac Mouse Fix. Disabling Gatekeeper entirely is quite easy, but it might make it more likely for you to run malware on accident. Adding an exception will not compromise the security of your system in any way, but it is slightly more complicated, due to aforementioned bugs in Catalina's System Preferences.
                     </p>
 
                     <hr class="sec__rule">
 
                     <!--Solution 1-->
                     <h2 class="sec-header">Solution 1 – Disabling Gatekeeper entirely</h2>
-                    <ol class="sec-txt">
-                        <li>Open Terminal</li>
-                        <li>Enter the following command and press the Return key</li>
+                    <ul class="sec-txt">
+                        <li>Open the Terminal and enter the following command</li>
                         <div class="code-box--on-white">
                             <p class="code-box--on-white__text">sudo spctl --master-disable</p>
                         </div>
 <!--                        <p class="sec-txt">This is what it should look like:</p>-->
-                            <li>Done</li>
+                        <p class="sec-txt__header">Screenshot</p>
                         <div class="picture-box--on-white">
                             <div class="screenshot-container">
                                 <img src="../resources/terminal_gatekeeper_disable.png" class="screenshot" alt="Screenshot of Terminal - How to disable Gatekeeper">
                             </div>
                         </div>
-                    </ol>
+                    </ul>
 
                     <!--Solution 2-->
                     
@@ -101,8 +100,8 @@
                                 </li>
                             </ul>
                         <li>Install Mac Mouse Fix again</li>
-                        <li>Done</li>
-                        <p class="sec-txt__header">Video Demo</p>
+                        <div class="separator"></div>
+                        <p class="sec-txt__header">Video demo</p>
                         <div class="picture-box--on-white">
                             <div class="video-container">
                                 <video src="../resources/notarization_workaround.mp4" controls></video>

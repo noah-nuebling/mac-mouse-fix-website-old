@@ -1,4 +1,22 @@
 
+.disclaimer {
+    z-index: 5;
+    background-color: var(--backgroundGray);
+    border-radius: 10px;
+    padding-bottom: 20px;
+    margin: -20px 300px -10px 300px;
+}
+.disclaimer__text {
+    text-align: center;
+    /*font-style: italic;*/
+    margin: 43px 0 0px 0;
+}
+.disclaimer__link {
+    color: var(--accent2);
+    text-decoration-line: none;
+}
+
+
 :root {
     --light1:   #BEBEBE; /* lightest grey */
     --light2:   #9A9A9A; /* mid grey */
@@ -86,6 +104,7 @@ h1 {
         margin: 9px 0 0 0;
     }
 }
+
 .nav__link {
 
     color: #9A9A9A;
