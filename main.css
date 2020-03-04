@@ -53,9 +53,11 @@
 
 html {
 
+    /*margin: 0 0 0 0;*/
     zoom: 100%;
     /*min-width: 560px;*/
     width: 100%;
+    height: 100%;
     background-size: cover;
 }
 
@@ -89,12 +91,9 @@ html, body {
 
 body {
 
-    /*padding: 0 20px 0 20px;*/
-
     display: flex;
     flex-direction: column;
 
-    min-width: 100%;
     margin-left: 0px;
     margin-right: 0px;
 
@@ -483,43 +482,30 @@ h1 {
 }
 
 .footer__overlay__right {
-
-    /*Trying to create a fade out effect on the right edge.*/
+    right: 0;
     background-image: linear-gradient(to right, rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,1));
-    /*background-size: cover;ent();*/
-
-    /*background-image: linear-gradient(90deg, rgba(1,1,1,1), rgba(1,1,1,1));*/
-    /*background-color: purple;*/
-    /*background-image: linear-gradient(to right, rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0.0),rgba(255,255,255,0.0),rgba(255,255,255,0.0),rgba(255,255,255,0.0),rgba(255,255,255,0.0),rgba(255,255,255,0.9),rgba(255,255,255,1));*/
-    /*content: "\00a0";*/
-    width: 20px;
+    width: 5%; /*width: 20px;*/
     height: 100%;
     position: absolute;
-    top: 0; right: 0; bottom: 0;
-    z-index: 10;
+    z-index: 2;
     pointer-events: none;
 }
 .footer__overlay__left {
-
-    /*Trying to create a fade out effect on the right edge.*/
+    left: 0;
     background-image: linear-gradient(to right, rgba(255,255,255,1),rgba(255,255,255,0.5),rgba(255,255,255,0));
-    /*background-size: cover;ent();*/
-
-    /*background-image: linear-gradient(90deg, rgba(1,1,1,1), rgba(1,1,1,1));*/
-    /*background-color: purple;*/
-    /*background-image: linear-gradient(to right, rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0.0),rgba(255,255,255,0.0),rgba(255,255,255,0.0),rgba(255,255,255,0.0),rgba(255,255,255,0.0),rgba(255,255,255,0.9),rgba(255,255,255,1));*/
-    /*content: "\00a0";*/
-    width: 20px;
+    width: 5%; /*width: 20px;*/
     height: 100%;
     position: absolute;
-    top: 0; left: 0; bottom: 0;
-    z-index: 10;
+    z-index: 2;
     pointer-events: none;
 
 }
 
 
 .footer__scrollview {
+
+    /*border-style: solid;*/
+
     width: 100%;
     overflow: auto;
     display: block;
@@ -533,7 +519,7 @@ h1 {
     /*margin: 0 20px 0 0;*/
 
     width: fit-content;
-    padding: 0 5% 0 5%;
+    padding: 0 5% 5px 5%;
     display: flex;
     align-items: center;
 
@@ -550,7 +536,7 @@ h1 {
     margin: 25px calc(20px + 2%) 15px 0px;
 }
 
-.donation-button {
+.footer__donation-button {
 
     /*border-style: solid;*/
 

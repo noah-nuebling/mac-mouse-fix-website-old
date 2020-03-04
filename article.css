@@ -11,6 +11,7 @@
 :root {
 
   --innerContentWidth: 1000px;
+  --innerContentPadding: 5vw;
 
   --light1:   #BEBEBE; /* lightest grey */
   --light2:   #9A9A9A; /* mid grey */
@@ -25,11 +26,14 @@
 
 
 html {
+  /*border-style: solid;*/
 }
 
 body {
 
-  height: calc(100vh - 30px);
+  /*border-style: solid;*/
+
+  /*height: calc(100vh - 30px);*/
 
   min-width: 100%;
   margin: 15px 0 0 0;
@@ -37,6 +41,10 @@ body {
   text-align: left;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   line-height: 22px;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 a {
@@ -173,19 +181,21 @@ a {
 width: 100%;
 }
 .sec--changelog {
-  padding: 20px 5% 20px 5%;
+  padding: 20px var(--innerContentPadding) 20px var(--innerContentPadding);
 }
 .inner-content {
+
+
   margin-left: auto;
   margin-right: auto;
   max-width: var(--innerContentWidth);
 }
 
 .sec--white {
-padding: 20px 5% 20px 5%;
+  padding: 20px var(--innerContentPadding) 20px var(--innerContentPadding);
 }
 .sec--grey {
-padding: 20px 5% 20px 5%;
+padding: 20px var(--innerContentPadding) 20px var(--innerContentPadding);
 background-color: var(--backgroundGray);
 }
 
@@ -211,6 +221,7 @@ background-color: var(--backgroundGray);
 }
 
 .sec-txt {
+
 
   font-size: 16px;
   color: var(--accent1);
@@ -250,7 +261,6 @@ background-color: var(--backgroundGray);
   flex-direction: column;
   align-items: center;
 
-  /*border-style: solid;*/
   margin: 20px 0 20px 0;
 
   border-radius: 5px;
@@ -276,7 +286,6 @@ background-color: var(--backgroundGray);
   flex-direction: column;
   align-items: center;
   /*overflow: hidden;*/
-  /*border-style: solid;*/
   margin: 20px 0 20px 0;
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.15), 0 25px 30px 0 rgba(0,0,0,0.35);
 
@@ -291,21 +300,63 @@ video {
 
 .footer {
 
+
+  position: relative;
+  margin: 5px auto 10px auto;
+  max-width: calc(var(--innerContentWidth) + 10%);
+  /*left: 0;*/
+  /*right: 0;*/
+}
+
+.footer__scrollview {
+
+
+
+  width: 100%;
   overflow: auto;
+  display: block;
+}
+
+.footer__scrollview__inner {
+
+
   white-space: nowrap;
 
+  /*margin: 0 20px 0 0;*/
 
-  margin: 5px auto 10px auto;
-  padding: 0 5% 0 5%;
+  width: fit-content;
+  padding: 0 var(--innerContentPadding) 0 var(--innerContentPadding);
   display: flex;
   align-items: center;
-
 
   min-height: 70px;
   text-align: left
 }
 
-.footer-link {
+.footer__overlay__right {
+
+  right: 0;
+  background-image: linear-gradient(to right, rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,1));
+  width: var(--innerContentPadding); /*width: 20px;*/
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+.footer__overlay__left {
+  left: 0;
+  background-image: linear-gradient(to right, rgba(255,255,255,1),rgba(255,255,255,0.5),rgba(255,255,255,0));
+  width: var(--innerContentPadding); /*width: 20px;*/
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+
+}
+
+
+
+.footer__link {
   font-size: 13px;
   color: var(--light2);
   text-decoration: none;
@@ -315,12 +366,14 @@ video {
 
 }
 
-.donation-button {
-  margin-left: 10px;
-  margin-right: 25px;
-  margin-bottom: 5px;
+.footer__donation-button {
+
+
+  margin: 0 0 5px 10px;
+  margin-right: calc(60px + 0px);
+  /*for some reason we have to put the margin to 60 to have the right edge align with the right edge which the parent objects "see"*/
   height: 40px;
   cursor: pointer;
 
-  transition: all 0.5s ease 0.0s;
+  /*transition: all 0.5s ease 0.0s;*/
 }
