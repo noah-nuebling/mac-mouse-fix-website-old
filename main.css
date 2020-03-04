@@ -1,4 +1,39 @@
 
+.disclaimer {
+    z-index: 5;
+    background-color: var(--backgroundGray);
+    box-shadow: 0 0 5px 1px rgba(0,0,30,0.1), 0 0px 10px 0px rgba(0,40,60,0.05);
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    /*border-color: #BEBEBE;*/
+    border-radius: 10px;
+    padding: 0px 20px 20px 20px;
+    margin: -35px 300px 20px 300px;
+    min-width: 300px;
+    align-self: center;
+}
+.disclaimer__text {
+    text-align: center;
+    /*font-style: italic;*/
+    margin: 43px 0 0px 0;
+}
+.disclaimer__link {
+    color: var(--accent2);
+    text-decoration-line: none;
+}
+
+@media only screen and (max-width: 768px)  {
+    .disclaimer {
+        margin: 20px 0 0 0;
+        padding: 0 10px 0 10px;
+        width: 100%;
+    }
+    .disclaimer__text {
+        margin: 20px 40px 20px 40px;
+    }
+}
+
+
 :root {
     --light1:   #BEBEBE; /* lightest grey */
     --light2:   #9A9A9A; /* mid grey */
@@ -69,6 +104,8 @@ h1 {
 }
 .nav {
 
+    z-index: 5;
+
     margin: 23px 0 -40px 20px;
 
     display: flex;
@@ -84,6 +121,9 @@ h1 {
         margin: 9px 0 0 0;
     }
 }
+
+/*.nav__link {*/
+/*TODO: Seems like the Git merging messed up here. Should delete this if everything works fine.*/
 
 .overlay {
     z-index: 2;
@@ -434,9 +474,15 @@ h1 {
 
 .footer {
 
+
+    /*Trying to create a fade out effect on the right edge.*/
+
+    /*border-style: solid;*/
+    /*background-image: linear-gradient(to right, rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,0,1));*/
+    /*background-size: cover;ent();*/
+
     overflow: auto;
     white-space: nowrap;
-
 
     margin-top: 0;
     padding: 0 5% 0 5%;
@@ -447,7 +493,7 @@ h1 {
     text-align: left
 }
 
-.footer__link {
+.footer-link {
 
     font-size: 13px;
     color: var(--light2);
@@ -457,7 +503,7 @@ h1 {
 }
 
 .donation-button {
-    margin-left: 10px;
+    margin-left: 0px;
     margin-right: 25px;
     margin-bottom: 5px;
     height: 40px;
