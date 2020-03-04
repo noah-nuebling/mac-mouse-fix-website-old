@@ -2,10 +2,13 @@
 .disclaimer {
     z-index: 5;
     background-color: var(--backgroundGray);
-    box-shadow: 0 0 5px 1px rgba(0,0,30,0.15), 0 0px 10px 0px rgba(0,40,60,0.1);
+    box-shadow: 0 0 5px 1px rgba(0,0,30,0.1), 0 0px 10px 0px rgba(0,40,60,0.05);
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    /*border-color: #BEBEBE;*/
     border-radius: 10px;
     padding: 0px 20px 20px 20px;
-    margin: -20px 300px 20px 300px;
+    margin: -35px 300px 20px 300px;
     min-width: 300px;
     align-self: center;
 }
