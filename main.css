@@ -52,10 +52,15 @@
 
 
 html {
+
     zoom: 100%;
     /*min-width: 560px;*/
     width: 100%;
     background-size: cover;
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 /*
@@ -473,27 +478,70 @@ h1 {
 
 
 .footer {
+    position: relative;
+/*    position the footer to be able to make position:absolute on child elements be relative to this element*/
+}
 
+.footer__overlay__right {
 
     /*Trying to create a fade out effect on the right edge.*/
-
-    /*border-style: solid;*/
-    /*background-image: linear-gradient(to right, rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,0,1));*/
+    background-image: linear-gradient(to right, rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,1));
     /*background-size: cover;ent();*/
+
+    /*background-image: linear-gradient(90deg, rgba(1,1,1,1), rgba(1,1,1,1));*/
+    /*background-color: purple;*/
+    /*background-image: linear-gradient(to right, rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0.0),rgba(255,255,255,0.0),rgba(255,255,255,0.0),rgba(255,255,255,0.0),rgba(255,255,255,0.0),rgba(255,255,255,0.9),rgba(255,255,255,1));*/
+    /*content: "\00a0";*/
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    top: 0; right: 0; bottom: 0;
+    z-index: 10;
+    pointer-events: none;
+}
+.footer__overlay__left {
+
+    /*Trying to create a fade out effect on the right edge.*/
+    background-image: linear-gradient(to right, rgba(255,255,255,1),rgba(255,255,255,0.5),rgba(255,255,255,0));
+    /*background-size: cover;ent();*/
+
+    /*background-image: linear-gradient(90deg, rgba(1,1,1,1), rgba(1,1,1,1));*/
+    /*background-color: purple;*/
+    /*background-image: linear-gradient(to right, rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0.0),rgba(255,255,255,0.0),rgba(255,255,255,0.0),rgba(255,255,255,0.0),rgba(255,255,255,0.0),rgba(255,255,255,0.9),rgba(255,255,255,1));*/
+    /*content: "\00a0";*/
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0; bottom: 0;
+    z-index: 10;
+    pointer-events: none;
+
+}
+
+
+.footer__scrollview {
+    width: 100%;
+    overflow: auto;
+    display: block;
+}
+
+.footer__scrollview__inner {
 
     overflow: auto;
     white-space: nowrap;
 
-    margin-top: 0;
+    /*margin: 0 20px 0 0;*/
+
+    width: fit-content;
     padding: 0 5% 0 5%;
     display: flex;
     align-items: center;
-    
+
     min-height: 80px;
     text-align: left
 }
 
-.footer-link {
+.footer__link {
 
     font-size: 13px;
     color: var(--light2);
@@ -503,13 +551,16 @@ h1 {
 }
 
 .donation-button {
-    margin-left: 0px;
-    margin-right: 25px;
-    margin-bottom: 5px;
+
+    /*border-style: solid;*/
+
+    margin: 0 0 5px 0;
+    margin-right: calc(60px + 0px);
+    /*for some reason we have to put the margin to 60 to have the right edge align with the right edge which the parent objects "see"*/
     height: 40px;
     cursor: pointer;
 
-    transition: all 0.5s ease 0.0s;
+    /*transition: all 0.5s ease 0.0s;*/
 }
 /*
 .DonationButton:hover {
