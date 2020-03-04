@@ -44,7 +44,7 @@ body {
 }
 
 html, body {
-  overflow-x: hidden;
+  overflow-x: hidden; /* this hides y-overflow as well because reasons */
 }
 
 a {
