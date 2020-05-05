@@ -165,6 +165,7 @@ a {
   border-top: 1px solid #ECECEC;
 }
 .sec__rule {
+
   margin: 0 30px 0 30px;
   border-style: none;
   border-top: 1px solid #ECECEC;
@@ -250,8 +251,9 @@ background-color: var(--backgroundGray);
   background-color: var(--backgroundGray);
   /*box-shadow: 0 0 5px 1px rgba(0,0,30,0.30);*/
   margin: 30px 0 25px 0;
-  padding: 1px 20px 1px 20px;
+  padding: 30px 30px 30px 30px;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 
@@ -261,7 +263,7 @@ background-color: var(--backgroundGray);
   flex-direction: column;
   align-items: center;
 
-  margin: 20px 0 20px 0;
+  margin: 0px 0 0px 0;
 
   border-radius: 5px;
   width: 100%;
@@ -281,12 +283,17 @@ background-color: var(--backgroundGray);
   border-radius: 5px;
 }
 
+.wallpaper-fill {
+  background-image: url("resources/Catalina.png");
+  background-size: 100%;
+}
+
 .video-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   /*overflow: hidden;*/
-  margin: 20px 0 20px 0;
+  /*margin: 20px 0 20px 0;*/
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.15), 0 25px 30px 0 rgba(0,0,0,0.35);
 
   border-radius: 5px;
