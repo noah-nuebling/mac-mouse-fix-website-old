@@ -253,7 +253,8 @@ background-color: var(--backgroundGray);
   margin: 30px 0 25px 0;
   padding: 30px 30px 30px 30px;
   border-radius: 5px;
-  overflow: hidden;
+  /*overflow: hidden;*/
+  /* ^ This used to mess up containted elements' shadows. Idk why I put it there in the first place*/
 }
 
 
