@@ -1,0 +1,33 @@
+
+body {
+    background-color: transparent;
+    /*background-color: green;*/
+
+    margin: 0px 0px 0px 10px;
+    padding: 0px;
+    font-family: -apple-system;
+}
+h1 {
+    margin-top: 0px;
+    color: #272727;
+    font: bold;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+ul {
+    padding-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+li, p {
+    font-size: 13px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+a {
+    font-size: 13px;
+    color: #0948be;
+    margin-left: 5px;
+}
