@@ -28,37 +28,53 @@
                 a.appendChild(r);
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         </script>
+        <!-- Get window height -->
+        <script>
+            // We listen to the resize event
+            window.addEventListener('resize', () => {
+                // We execute the same script as before
+                let vh = window.innerHeight * 0.01;
+                document.documentElement.style.setProperty('--vh', `${vh}px`);
+            });
+        </script>
 
     </head>
-    
     <body>
 
-        <div class="TopBar"></div>
+        <div class="welcome-box">
 
-        <div class="nav">
-            <a class="nav__link--active" href="">Home</a>
-            <a class="nav__link" href="about">About</a>
-<!--            <a class="nav__link" href="help">Help</a>-->
+            <div class="nav">
+                <a class="nav__link--active" href="">Home</a>
+                <a class="nav__link" href="about">About</a>
+    <!--            <a class="nav__link" href="help">Help</a>-->
+            </div>
+            <div class="disclaimer">
+                <p class="disclaimer__text">If you have problems installing on macOS 10.15 Catalina, click <a href="help" class="disclaimer__link">here</a>.</p>
+            </div>
+
+
+            <!-- Title -->
+            <div class="title__icon-wrapper">
+                <img class="title__icon" src="resources/app_icon_round.png" alt="Mouse Fix Icon">
+            </div>
+            <div class="scalable">
+                <h1 class="Title1">Mac <span class="Title2">Mouse <span class="Title3">Fix</span></span></h1>
+                <div class="download-div">
+                    <button id="downloadButton"
+                            onclick="window.location.href='maindownload-app/MacMouseFixApp.zip';"
+                            type="button"
+                            class="DownloadButton">
+                        Download</button>
+                    <div class="macos-compat-cell">
+                        <p class="macos-compat-text">For macOS 10.11+</p>
+                    </div>
+                </div>
+
+                <h3 class="Subtitle">A simple way to make your mouse better.</h3>
+                <img src="resources/chevron-down.svg" alt="Scroll down for more">
+            </div>
+
         </div>
-        <div class="disclaimer">
-            <p class="disclaimer__text">If you have problems installing on macOS 10.15 Catalina, click <a href="help" class="disclaimer__link">here</a>.</p>
-        </div>
-
-
-        <!-- Title -->
-
-        <img class="title__icon" src="resources/Mouse_Fix.png" alt="Mouse Fix Icon">
-
-        <h1 class="Title1">Mac <span class="Title2_1">Mouse</span> <span class="Title2_2">Fix</span></h1>
-
-        <button id="downloadButton"
-                onclick="window.location.href='maindownload-app/MacMouseFixApp.zip';"
-                type="button"
-                class="DownloadButton">
-            Download</button>
-
-
-        <h3 class="Subtitle">No ads, no costs, just a simple way to make your mouse better.</h3>
 
         <!-- content -->
 
