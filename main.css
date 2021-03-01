@@ -544,10 +544,10 @@ h1 {
 
     /*border-style: solid;*/
 
-    margin: 0 0 5px 0;
+    margin: 4px 0 0px 0;
     margin-right: calc(60px + 0px);
     /*for some reason we have to put the margin to 60 to have the right edge align with the right edge which the parent objects "see"*/
-    height: 40px;
+    height: 26px;
     cursor: pointer;
 
     /*transition: all 0.5s ease 0.0s;*/
