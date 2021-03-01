@@ -289,7 +289,7 @@ background-color: var(--backgroundGray);
   background-size: 100%;
 }
 
-.video-container {
+.picture-container {
   display: flex;
   flex-direction: column;
   align-items: center;

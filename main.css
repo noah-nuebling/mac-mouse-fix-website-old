@@ -335,7 +335,7 @@ h1 {
     }
 }
 
-.video-container {
+.picture-container {
 
 
     display: block;
@@ -357,10 +357,13 @@ h1 {
 
     transition: all 0.5s ease 0.0s;
 
+    background-color: transparent; /*This just makes it white :/*/
+
+
 }
 
 @media only screen and (max-width: 768px) {
-    .video-container {
+    .picture-container {
 
         /*border-style: solid;*/
 
@@ -369,7 +372,7 @@ h1 {
     }
 }
 
-.video-container.elevate {
+.picture-container.elevate {
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.15), 0 25px 30px 0 rgba(0,0,0,0.35);
     /*transform: scale(1.05,1.05);*/
 }
@@ -427,6 +430,7 @@ h1 {
 
 
 .UIPicture-cont {
+    /*Container for syspref image*/
 
     margin: 25px 0 50px 0;
 
