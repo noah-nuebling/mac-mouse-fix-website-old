@@ -49,21 +49,33 @@
 
                         <h2 class="sec-title">Questions</h2>
 
-                        <h3 class="sec-txt__header">Why make it? There are already apps for smooth scrolling and remapping mouse buttons.</h3>
+                        <h3 class="sec-txt__header">Why Mac Mouse Fix? There are already apps for smooth scrolling and remapping mouse buttons.</h3>
                         <p class="sec-txt">
-                            I was looking for an easy way to use Spaces and Mission Control from my mouse. I found some great software like Steer Mouse and BetterTouchTool, but none of it was free. So I decided to build my own - 100% free - solution. I worked on the smooth scrolling algorithm mostly because it was a lot of fun, but also because I think it fits Mac Mouse Fix really well.
+                            I was looking for an easy way to use Spaces and Mission Control from my mouse. I found some great software like Steer Mouse and BetterTouchTool, but none of it was free. So I decided to build my own - 100% free - solution.
+                            <br>
+                            At some point I started working on a smooth scrolling algorithm for fun and it led me to the idea of tackling all the most common problems which mac users have with their mice in one neat little package.
                         </p>
                         <h3 class="sec-txt__header">Does Mouse Fix track your information?</h3>
                         <p class="sec-txt">
-                            I'm committed to your privacy. Mac Mouse Fix does not have ads and it doesn't track any information about you. This Website uses Hotjar which is a more privacy focused alternative to Google Analytics to see how many times the site was visited and how many times the download button was clicked. You can view all recorded data
-
+                            I'm committed to your privacy. Mac Mouse Fix does not have ads and it doesn't track any information about you. <br>
+                            If you have automatic updates turned on, Mac Mouse Fix will ping Github's servers every time you launch the app to ask for an update. I can't retrieve any information about that however. <br>
+                            This Website uses Hotjar which I chose as a more privacy focused alternative to Google Analytics. I used this to see how many times the site was visited and how many times the download button was clicked. You can view all recorded data
                             <a href="https://gist.github.com/noah-nuebling/3d851dcaf582a08ac2e4a8d68401d66c">here</a>.
+                        </p>
+                        <h3 class="sec-txt__header">How do I uninstall Mac Mouse Fix?</h3>
+                        <p class="sec-txt">
+                            <ul>
+                                <li>Make sure that Mac Mouse Fix is enabled</li>
+                                <li>Move Mac Mouse Fix to the trash</li>
+                            </ul>
+
+                            Mac Mouse Fix will then delete all files it created on your system
                         </p>
                         <h3 class="sec-txt__header">Why do I need to give Mac Mouse Fix Accessibility Access?</h3>
                         <p class="sec-txt">
-                            Mac Mouse Fix uses this access to intercept input from the middle mouse button and the two side buttons, as well as the scroll wheel and the shift key (so you can scroll horizontally when pressing shift).
+                            Mac Mouse Fix uses these special privileges to capture input from your mouse as well as some keyboard modifiers.
                             <br>
-                            Based on this input, Mac Mouse Fix then creates its own, artificial input events, in order to trick the computer into thinking that a certain keyboard shortcut has been pressed, or that a certain touch input has occurred, or that a trackpad-like device has scrolled a certain distance.
+                            This allows Mac Mouse Fix to do useful things like zooming in our out in Safari when you hold Command (⌘) while scrolling.
                             <br><br>
                             For all the details you can look at the Mac Mouse Fix source code on <a href="https://github.com/noah-nuebling/mac-mouse-fix">GitHub</a>.
                         </p>
@@ -106,4 +118,3 @@
     </body>
     
 </html>
-        
