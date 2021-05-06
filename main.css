@@ -117,16 +117,19 @@ body {
 
 .welcome-box {
 
-    min-height: 550px;
+    min-height: 700px;
     /*height: calc(var(--vh, 1vh) * 100);*/
     height: 100vh;
     width: 100%;
 
+    position: relative; /* Need this for the ::after element to be sized properly */
+    
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .welcome-box::after {
+    
     background-image: url("resources/MilkshakeWall4k.png");
     background-size: cover;
 
