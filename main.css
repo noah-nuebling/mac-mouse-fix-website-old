@@ -1,10 +1,10 @@
 
 .disclaimer {
 
-    display: none;
+    display: block;
 
     z-index: 5;
-    background-color: var(--backgroundGray);
+    background-color: var(--disclaimerGray);
     box-shadow: 0 0 5px 1px rgba(0,0,30,0.1), 0 0px 10px 0px rgba(0,40,60,0.05);
     /*border-style: solid;*/
     /*border-width: 1px;*/
@@ -14,15 +14,27 @@
     margin: -30px 300px 20px 300px;
     min-width: 300px;
     align-self: center;
+
+    line-height: 1.3em;
 }
 .disclaimer__text {
     text-align: center;
     /*font-style: italic;*/
     margin: 43px 0 0px 0;
 }
+.disclaimer__text--small {
+    font-size: 0.8em;
+    line-height: 1.3em;
+}
 .disclaimer__link {
     color: var(--accent2);
     text-decoration-line: none;
+}
+.disclaimer__quote {
+    /*font-style: italic;*/
+    font-weight: 300;
+    font-kerning: auto;
+    /*background-color: #9A9A9A;*/
 }
 
 @media only screen and (max-width: 768px)  {
@@ -46,7 +58,8 @@
 
     /* green: #28C948, blue: #FFA500, Orange: #217DFC*/
     
-    --backgroundGray: #F5F5F5;
+    --backgroundGray: #f5f5f5;
+    --disclaimerGray: var(--backgroundGray);
 
 
     --titleScale: 1.1;
