@@ -1,4 +1,75 @@
 
+/* Utility */
+
+span.no-wrap { display:inline-block; } /* Avoid wrapping text */
+
+/* Root and body */
+
+
+:root {
+    --light1:   #BEBEBE; /* lightest grey */
+    --light2:   #9A9A9A; /* mid grey */
+    --light3:   #909090; /* mid grey slightly darker */
+    --accent1:  #3C3C3C; /* almost black */
+    --accent2:  #217DFC;
+
+    /* green: #28C948, blue: #FFA500, Orange: #217DFC*/
+
+    --backgroundGray: #f5f5f5;
+    --disclaimerGray: var(--backgroundGray);
+
+
+    --titleScale: 1.1;
+}
+
+html {
+
+
+    margin: 0 0 0 0;
+    zoom: 100%;
+    /*min-width: 560px;*/
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+html, body {
+    /*border-style: solid;*/
+    overflow-x: hidden; /* this hides y-overflow as well because reasons */
+}
+
+/*
+.TopBar {
+    opacity: 0.5;
+
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+    position: fixed;
+    background-color: #3C3C3C;
+}
+*/
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0 0px 0;
+
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.Signature {
+    margin: 0px 5px 0px 0px;
+    text-align: right;
+    color: var(--light1);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Disclaimer */
+
 .disclaimer {
 
     display: block;
@@ -48,70 +119,6 @@
     }
 }
 
-
-:root {
-    --light1:   #BEBEBE; /* lightest grey */
-    --light2:   #9A9A9A; /* mid grey */
-    --light3:   #909090; /* mid grey slightly darker */
-    --accent1:  #3C3C3C; /* almost black */
-    --accent2:  #217DFC;
-
-    /* green: #28C948, blue: #FFA500, Orange: #217DFC*/
-    
-    --backgroundGray: #f5f5f5;
-    --disclaimerGray: var(--backgroundGray);
-
-
-    --titleScale: 1.1;
-}
-
-
-
-html {
-
-
-    margin: 0 0 0 0;
-    zoom: 100%;
-    /*min-width: 560px;*/
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-}
-
-html, body {
-    /*border-style: solid;*/
-    overflow-x: hidden; /* this hides y-overflow as well because reasons */
-}
-
-/*
-.TopBar {
-    opacity: 0.5;
-
-    width: 100%;
-    height: 80px;
-    z-index: 10;
-    position: fixed;
-    background-color: #3C3C3C;
-}
-*/
-
-.Signature {
-    margin: 0px 5px 0px 0px;
-    text-align: right;
-    color: var(--light1);
-    font-weight: 400;
-    font-size: 16px;
-}
-
-body {
-
-    display: flex;
-    flex-direction: column;
-    margin: 0px 0 0px 0;
-
-    text-align: center;
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
-}
 
 /* Welcome box */
 
