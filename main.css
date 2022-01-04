@@ -57,7 +57,7 @@ body {
     margin: 0px 0 0px 0;
 
     text-align: center;
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-family: /* -apple-system, */"Helvetica Neue", Helvetica, sans-serif;
 }
 
 .Signature {
@@ -156,8 +156,10 @@ body {
 h1 {
     font-kerning: auto;
     font-size: calc(var(--titleScale) * 70px);
+
     font-weight: 900;
 }
+
 
 .nav {
 
@@ -269,11 +271,107 @@ h1 {
 
 .download-div {
     flex-shrink: 0;
-    margin: 30px auto 10px auto;
+    margin: 45px auto 10px auto;
 
     /*display: grid;*/
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-rows: auto;
+    /*grid-template-columns: repeat(3, minmax(0, 1fr));*/
+    /*grid-template-rows: auto;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /*border-style: solid;*/
+}
+
+.latest-version-fader {
+
+    display: none;
+    /*display: grid;*/
+    grid-template-rows: auto/*fit-content(0)*/;
+    grid-template-columns: auto/*fit-content(0)*/;
+    justify-items: center;
+    align-items: center;
+    /*justify-content: center;*/
+    /*align-content: center;*/
+
+    width: fit-content;
+
+    margin: 0 0 10px 0;
+
+    /*border-style: solid;*/
+}
+
+.latest-version-fader:hover .latest-version-main-container {
+    opacity: 0;
+    pointer-events: none;
+}
+.latest-version-fader:hover .latest-version-link-container {
+    opacity: 1;
+    z-index: 1;
+}
+
+.latest-version-link-container {
+    grid-row: 1 / 1; /* Span the whole grid */
+    grid-column: 1 / 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+
+    /*border-style: solid;*/
+}
+.latest-version-link {
+    color: var(--accent2);
+    text-decoration-line: none;
+    font-size: calc(var(--titleScale) * 11px);
+    /*position: absolute;*/
+}
+
+.latest-version-main-container {
+    grid-row: 1 / 1; /* Also spane the whole grid. Overlaps with latest-version-link-container. */
+    grid-column: 1 / 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    transition: opacity 0.2s ease-in-out;
+
+    /*border-style: solid;*/
+}
+
+.latest-version-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--accent2);
+
+    border-radius: 5px;
+
+    padding: 2px 6px 2.5px 6px;
+}
+.latest-version-number__text {
+    margin: 0 0 0 0;
+
+    font-size: calc(var(--titleScale) * 11px);
+    font-weight: 450;
+
+    color: white;
+}
+.latest-version-text {
+
+    margin: 0 0 0 6px;
+    padding: 0 0 2px 0;
+
+    font-size: calc(var(--titleScale) * 11px);
+    font-weight: bold;
+
+    color: var(--accent1);
 }
 
 .DownloadButton {
