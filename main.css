@@ -285,8 +285,8 @@ h1 {
 
 .latest-version-fader {
 
-    display: none;
-    /*display: grid;*/
+    /*display: none;*/
+    display: grid;
     grid-template-rows: auto/*fit-content(0)*/;
     grid-template-columns: auto/*fit-content(0)*/;
     justify-items: center;
