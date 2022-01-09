@@ -2,6 +2,9 @@
 <html>
     
     <head>
+
+        <meta http-equiv="Refresh" content="0; url='https://github.com/noah-nuebling/mac-mouse-fix/discussions/categories/guides'" />
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Mac Mouse Fix - Help</title>
@@ -12,138 +15,138 @@
         <link rel="stylesheet" href="../article.css">
     </head>
     
-    <body>
-        <div class="content">
+<!--    <body>-->
+<!--        <div class="content">-->
 
-            <div class="top-bar">
-                <div class="nav">
-                    <a class="nav__link" href="../">Home</a>
-                    <a class="nav__link" href="../about">About</a>
-                    <a class="nav__link--active" href="">Help</a>
-                </div>
+<!--            <div class="top-bar">-->
+<!--                <div class="nav">-->
+<!--                    <a class="nav__link" href="../">Home</a>-->
+<!--                    <a class="nav__link" href="../about">About</a>-->
+<!--                    <a class="nav__link&#45;&#45;active" href="">Help</a>-->
+<!--                </div>-->
 
-                <div class="top-bar__title" onclick="location.href='../'">
-                    <img class="top-bar__title__logo" src="../resources/Mouse_Fix.png" alt="Mouse Fix Icon">
-                    <p class="top-bar__title__txt">Mac <span class="top-bar__title__txt--1">Mouse</span> <span class="top-bar__title__txt--2">Fix</span></p>
-                </div>
-            </div>
+<!--                <div class="top-bar__title" onclick="location.href='../'">-->
+<!--                    <img class="top-bar__title__logo" src="../resources/Mouse_Fix.png" alt="Mouse Fix Icon">-->
+<!--                    <p class="top-bar__title__txt">Mac <span class="top-bar__title__txt&#45;&#45;1">Mouse</span> <span class="top-bar__title__txt&#45;&#45;2">Fix</span></p>-->
+<!--                </div>-->
+<!--            </div>-->
 
-            <hr class="footer__rule">
+<!--            <hr class="footer__rule">-->
 
-            <div class="main-content">
+<!--            <div class="main-content">-->
 
-<!--                <p class="disclaimer">Bluetooth Mice are currently not fully supported. I plan on pushing an update which fixes this issue within the next month.</p>-->
+<!--&lt;!&ndash;                <p class="disclaimer">Bluetooth Mice are currently not fully supported. I plan on pushing an update which fixes this issue within the next month.</p>&ndash;&gt;-->
 
-                <!--Notarization Issues-->
-                <div class="sec--white inner-content">
-                    <h2 class="sec-title">Notarization Issues</h2>
-                    <p class="sec-txt">
-                        If you're using macOS 10.15 Catalina, you might have encountered the following error message when trying to install Mac Mouse Fix.
-                    </p>
-                    <div class="picture-box--on-white wallpaper-fill">
-                        <div class="screenshot-container">
-                            <img src="../resources/notarization_popup.png" class="screenshot-small" alt="Warning popup which comes up when you try to open an unnotarized app">
-                        </div>
-                    </div>
-                    
-                    <h3 class="sec-txt__header">Why does this issue occur?</h3>
-                    <p class="sec-txt">
-                        There is a new security feature in macOS called Notarization. When running notarized apps, you can be sure that Apple has checked them and determined them to be safe. While Notarization is a great safety measure in principle, it is unfortunately a little unstable currently. Some issues with it can prevent you from using unnotarized Preference Panes entirely.
-                        <br>
-                        It costs 99 dollars per year to notarize an app, which makes it a bad option for free and open-source software like Mac Mouse Fix.
-                        <br>
-                        Apple will likely fix these issues in the future, but for now, you will have to rely on a workaround to get Mac Mouse Fix to run on Catalina.
-                    </p>
-                    <hr class="sec__rule">
-                    <!--Is there a solution?-->
-                    <h2 class="sec-title">The Solution</h2>
-                    <p class="sec-txt">
-                        Thankfully, <a href="https://github.com/morgannewman">Morgan Newman</a>, who has been wonderfully supportive of this little project, figured out how to install Mac Mouse Fix despite these issues. He found that, in order to run Mac Mouse Fix, you have to circumvent Gatekeeper – a security feature in macOS which prevents the execution of apps that are not signed and notarized with Apple.
-
-                    </p>
-
-                    <!--Solution 2-->
-                    
-                    <h2 class="sec-txt__header">Adding a Gatekeeper exception for Mac Mouse Fix</h2>
-                    <ol class="sec-txt">
-                        <li>Install Mac Mouse Fix</li>
-<!--                            <ul>-->
-<!--&lt;!&ndash;                                <li>Double-click the downloaded Preference Pane file</li>&ndash;&gt;-->
-<!--                            </ul>-->
-                        <li><a href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">Open Terminal</a> and enter the following command</li>
-                        <div class="code-box--on-white">
-                            <p class="code-box--on-white__text">
-                                sudo spctl --add ~/Library/PreferencePanes/Mouse\ Fix.prefPane;
-                                sudo spctl --add /Library/PreferencePanes/Mouse\ Fix.prefPane
-                            </p>
-                        </div>
-                        <li>Uninstall Mac Mouse Fix</li>
-                            <ol>
-                                <li>Go to System Preferences</li>
-                                <li>Right-click the 'Mouse Fix' pane</li>
-                                <li>Select 'Remove "Mouse Fix" Preference Pane'</li>
-                            </ol>
-                        <li>Install Mac Mouse Fix again</li>
-                    </ol>
-<!--                    <div class="separator"></div>-->
-<!--                    <div class="separator"></div>-->
-                    <div class="picture-box--on-white">
-<!--                        <p class="sec-txt__header">Video Demo – Adding a Gatekeeper exception for Mac Mouse Fix</p>-->
-                        <div class="video-container">
-                            <video  controls
-                                    preload="auto"
-                                    playsinline>
-                                <source src="../resources/notarization_workaround.mp4#t=0.1" type="video/mp4">
-                            </video>
-                        </div>
-                    </div>
-
-                    <!--Solution 1-->
-<!--                    <h2 class="sec-txt__header">First Solution – Disabling Gatekeeper entirely</h2>-->
-<!--                    <p class="sec-txt__subheader">-->
-<!--                        Disabling Gatekeeper will make it easier for you to run malicious software on accident. &lt;!&ndash; but it will prevent any future issues you might have trying to install or update unnotarized software. &ndash;&gt;-->
+<!--                &lt;!&ndash;Notarization Issues&ndash;&gt;-->
+<!--                <div class="sec&#45;&#45;white inner-content">-->
+<!--                    <h2 class="sec-title">Notarization Issues</h2>-->
+<!--                    <p class="sec-txt">-->
+<!--                        If you're using macOS 10.15 Catalina, you might have encountered the following error message when trying to install Mac Mouse Fix.-->
 <!--                    </p>-->
-                    <p class="sec-txt__header">Alternatively, you can disable Gatekeeper entirely</p>
-                    <p class="sec-txt__subheader">Note that this will make it easier to accidentally run malicious software</p>
-                    <ol class="sec-txt">
-                        <li><a href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">Open Terminal</a> and enter the following command</li>
-                        <div class="code-box--on-white">
-                            <p class="code-box--on-white__text">sudo spctl --master-disable</p>
-                        </div>
-                        <!--                        <p class="sec-txt__header">This is what it should look like</p>-->
-                        <!--                        <li>Restart System Preferences if it currently running wi</li>-->
-<!--                        <li>If System Preferences is running – close it</li>-->
-                        <!--                        <div class="separator"></div>-->
-                        <!--                        <p class="sec-txt__header">Screenshot of Terminal after entering the command</p>-->
-                        <!--                        <div class="picture-box&#45;&#45;on-white">-->
-                        <!--                            <div class="screenshot-container">-->
-                        <!--                                <img src="../resources/terminal_gatekeeper_disable.png" class="screenshot" alt="Screenshot of Terminal - How to disable Gatekeeper">-->
-                        <!--                            </div>-->
-                        <!--                        </div>-->
-                    </ol>
+<!--                    <div class="picture-box&#45;&#45;on-white wallpaper-fill">-->
+<!--                        <div class="screenshot-container">-->
+<!--                            <img src="../resources/notarization_popup.png" class="screenshot-small" alt="Warning popup which comes up when you try to open an unnotarized app">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    -->
+<!--                    <h3 class="sec-txt__header">Why does this issue occur?</h3>-->
+<!--                    <p class="sec-txt">-->
+<!--                        There is a new security feature in macOS called Notarization. When running notarized apps, you can be sure that Apple has checked them and determined them to be safe. While Notarization is a great safety measure in principle, it is unfortunately a little unstable currently. Some issues with it can prevent you from using unnotarized Preference Panes entirely.-->
+<!--                        <br>-->
+<!--                        It costs 99 dollars per year to notarize an app, which makes it a bad option for free and open-source software like Mac Mouse Fix.-->
+<!--                        <br>-->
+<!--                        Apple will likely fix these issues in the future, but for now, you will have to rely on a workaround to get Mac Mouse Fix to run on Catalina.-->
+<!--                    </p>-->
+<!--                    <hr class="sec__rule">-->
+<!--                    &lt;!&ndash;Is there a solution?&ndash;&gt;-->
+<!--                    <h2 class="sec-title">The Solution</h2>-->
+<!--                    <p class="sec-txt">-->
+<!--                        Thankfully, <a href="https://github.com/morgannewman">Morgan Newman</a>, who has been wonderfully supportive of this little project, figured out how to install Mac Mouse Fix despite these issues. He found that, in order to run Mac Mouse Fix, you have to circumvent Gatekeeper – a security feature in macOS which prevents the execution of apps that are not signed and notarized with Apple.-->
+
+<!--                    </p>-->
+
+<!--                    &lt;!&ndash;Solution 2&ndash;&gt;-->
+<!--                    -->
+<!--                    <h2 class="sec-txt__header">Adding a Gatekeeper exception for Mac Mouse Fix</h2>-->
+<!--                    <ol class="sec-txt">-->
+<!--                        <li>Install Mac Mouse Fix</li>-->
+<!--&lt;!&ndash;                            <ul>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                                <li>Double-click the downloaded Preference Pane file</li>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                            </ul>&ndash;&gt;-->
+<!--                        <li><a href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">Open Terminal</a> and enter the following command</li>-->
+<!--                        <div class="code-box&#45;&#45;on-white">-->
+<!--                            <p class="code-box&#45;&#45;on-white__text">-->
+<!--                                sudo spctl &#45;&#45;add ~/Library/PreferencePanes/Mouse\ Fix.prefPane;-->
+<!--                                sudo spctl &#45;&#45;add /Library/PreferencePanes/Mouse\ Fix.prefPane-->
+<!--                            </p>-->
+<!--                        </div>-->
+<!--                        <li>Uninstall Mac Mouse Fix</li>-->
+<!--                            <ol>-->
+<!--                                <li>Go to System Preferences</li>-->
+<!--                                <li>Right-click the 'Mouse Fix' pane</li>-->
+<!--                                <li>Select 'Remove "Mouse Fix" Preference Pane'</li>-->
+<!--                            </ol>-->
+<!--                        <li>Install Mac Mouse Fix again</li>-->
+<!--                    </ol>-->
+<!--&lt;!&ndash;                    <div class="separator"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="separator"></div>&ndash;&gt;-->
+<!--                    <div class="picture-box&#45;&#45;on-white">-->
+<!--&lt;!&ndash;                        <p class="sec-txt__header">Video Demo – Adding a Gatekeeper exception for Mac Mouse Fix</p>&ndash;&gt;-->
+<!--                        <div class="video-container">-->
+<!--                            <video  controls-->
+<!--                                    preload="auto"-->
+<!--                                    playsinline>-->
+<!--                                <source src="../resources/notarization_workaround.mp4#t=0.1" type="video/mp4">-->
+<!--                            </video>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    &lt;!&ndash;Solution 1&ndash;&gt;-->
+<!--&lt;!&ndash;                    <h2 class="sec-txt__header">First Solution – Disabling Gatekeeper entirely</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <p class="sec-txt__subheader">&ndash;&gt;-->
+<!--&lt;!&ndash;                        Disabling Gatekeeper will make it easier for you to run malicious software on accident. &lt;!&ndash; but it will prevent any future issues you might have trying to install or update unnotarized software. &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    </p>&ndash;&gt;-->
+<!--                    <p class="sec-txt__header">Alternatively, you can disable Gatekeeper entirely</p>-->
+<!--                    <p class="sec-txt__subheader">Note that this will make it easier to accidentally run malicious software</p>-->
+<!--                    <ol class="sec-txt">-->
+<!--                        <li><a href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">Open Terminal</a> and enter the following command</li>-->
+<!--                        <div class="code-box&#45;&#45;on-white">-->
+<!--                            <p class="code-box&#45;&#45;on-white__text">sudo spctl &#45;&#45;master-disable</p>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash;                        <p class="sec-txt__header">This is what it should look like</p>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                        <li>Restart System Preferences if it currently running wi</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li>If System Preferences is running – close it</li>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                        <div class="separator"></div>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                        <p class="sec-txt__header">Screenshot of Terminal after entering the command</p>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                        <div class="picture-box&#45;&#45;on-white">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            <div class="screenshot-container">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                                <img src="../resources/terminal_gatekeeper_disable.png" class="screenshot" alt="Screenshot of Terminal - How to disable Gatekeeper">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--                    </ol>-->
 
 
-                </div>
+<!--                </div>-->
 
-            </div>
-            <hr class="footer__rule"> <!-- Have to put rule outside of main content div, to center it. Have to put footer into main content div for it to be scrollable... -->
-            <div class="main-content">
-                <div class="footer inner-content">
-                    <div class="footer__overlay__left"></div>
-                    <div class="footer__overlay__right"></div>
-                    <div class="footer__scrollview">
-                        <div class="footer__scrollview__inner">
-                            <a href="https://github.com/noah-nuebling" class="footer__link">GitHub</a>
-                            <a href="mailto:noah.n.public@gmail.com?subject=Mac Mouse Fix - Contact&" class="footer__link">Questions, Feedback, Feature Requests</a>
-                            <img onclick="location.href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ARSTVR6KFB524&source=url&lc=en_US'" class="footer__donation-button" src="../resources/Donation%20Button.jpg" alt="Donation Button">
+<!--            </div>-->
+<!--            <hr class="footer__rule"> &lt;!&ndash; Have to put rule outside of main content div, to center it. Have to put footer into main content div for it to be scrollable... &ndash;&gt;-->
+<!--            <div class="main-content">-->
+<!--                <div class="footer inner-content">-->
+<!--                    <div class="footer__overlay__left"></div>-->
+<!--                    <div class="footer__overlay__right"></div>-->
+<!--                    <div class="footer__scrollview">-->
+<!--                        <div class="footer__scrollview__inner">-->
+<!--                            <a href="https://github.com/noah-nuebling" class="footer__link">GitHub</a>-->
+<!--                            <a href="mailto:noah.n.public@gmail.com?subject=Mac Mouse Fix - Contact&" class="footer__link">Questions, Feedback, Feature Requests</a>-->
+<!--                            <img onclick="location.href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ARSTVR6KFB524&source=url&lc=en_US'" class="footer__donation-button" src="../resources/Donation%20Button.jpg" alt="Donation Button">-->
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr class="footer__rule">
-        </div>
-    </body>
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <hr class="footer__rule">-->
+<!--        </div>-->
+<!--    </body>-->
     
 </html>
         
