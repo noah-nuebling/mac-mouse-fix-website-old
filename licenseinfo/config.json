@@ -1,4 +1,5 @@
 {
+   "maxActivations": 100,
    "trialDays": 15,
    "price": 199,
    "payLink": "https://noahnuebling.gumroad.com/l/mmfinapp",
