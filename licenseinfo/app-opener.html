@@ -1,0 +1,16 @@
+<!--I plan to use this to open the LicenseSheet directly from the Gumroad checkout-->
+<!--Source: https://stackoverflow.com/a/12070246/10601702 -->
+
+<html>
+
+<script>
+	function openAppAndCloseTab(url) {
+        window.location.href = url
+        window.onfocus = function () { window.close(); }
+	}
+</script>
+
+<body onload=openAppAndCloseTab("x-apple.systempreferences:com.apple.LoginItems-Settings.extension")>
+
+</body>
+</html>
