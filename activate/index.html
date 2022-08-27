@@ -8,6 +8,7 @@
 	function openAppAndCloseTab(url) {
 		window.location.href = url
 		window.onfocus = function () { window.close(); }
+		setTimeout(function () { window.close() }, 10 * 1000);
 	}
 </script>
 
