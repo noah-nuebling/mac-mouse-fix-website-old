@@ -6,9 +6,13 @@
 
 <script>
 	function openAppAndCloseTab(url) {
-		window.location.href = url
-		window.onfocus = function () { window.close(); }
-		setTimeout(function () { window.close() }, 10 * 1000);
+	
+		// The 10 ms delay is necessary for Firefox to not close immediately.
+		// The 5 s delay is because Chrome doesn't close the tab automatically after opening MMF.
+
+		window.location.href = url;
+		setTimeout(function () { window.onfocus = function () { window.close(); }; }, 10);
+		setTimeout(function () { window.close(); }, 5 * 1000);
 	}
 </script>
 
