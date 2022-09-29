@@ -4,4 +4,8 @@
    "price": 199,
    "payLink": "https://noahnuebling.gumroad.com/l/mmfinapp",
    "quickPayLink": "https://noahnuebling.gumroad.com/l/mmfinapp?wanted=true",
+   "altPayLink": "<paddle payment link>",
+   "altQuickPayLink": "paddle quick pay link",
+   "altPayLinkCountries": [],
+   "freeCountries": ["<Chinese locale 1>", "Chinese Locale 2", "Russian Locale 1", "..."],
 }
